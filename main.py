@@ -1,5 +1,6 @@
 import logging
 import time
+import traceback
 
 from utils import init_args
 
@@ -13,18 +14,23 @@ switch_method = {
     "page": PageProcessor,
 }
 
-if __name__ == "__main__":
-    args = init_args()
+def run(args):
     try:
-        processor = switch_method[args["method"]]()
+            processor = switch_method[args["method"]]()
     except:
         raise ValueError(f"{args['method']} is not a valid extraction method")
-    
+        
     vsh = VectorStoreHandler()
-    vs = vsh.get_vector_store()
+    vsh.get_vector_store()
     contents = processor.get_pdf_content(args["pdf"])
     if args["embed"]:
         vsh.load_docs_in_vector_store(contents)
     else:
-        similar_docs = vsh.query_by_similarity(args["query"])
-        print(similar_docs)
+        filters = ("source", args["pdf"])
+        similar_docs = vsh.query_by_similarity(args["query"], filters=filters)
+
+    return similar_docs
+
+if __name__ == "__main__":
+    args = init_args()
+    run()

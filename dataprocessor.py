@@ -1,10 +1,11 @@
 import functools
-from PyPDF2 import PdfWriter, PdfReader
-#from langchain_community.document_loaders import UnstructuredPDFLoader
-from langchain_community.document_loaders import PyPDFLoader
-
 import logging
 import time
+import os
+
+from langchain_community.document_loaders import PyPDFLoader
+from tqdm import tqdm
+from datetime import datetime
 
 logging.basicConfig(filename="./log/bper.log", level=logging.INFO)
 logger = logging.getLogger("bper.dataprocessor")
@@ -20,16 +21,33 @@ class PageProcessor:
 
     @functools.cache
     def _get_reader(self, pdf_path):
-        try:
-            loader = PyPDFLoader(pdf_path)
-            data = loader.load_and_split()
-
-            return data
-        except:
+        if not os.path.exists(pdf_path):
             raise ValueError(f"{pdf_path} is non existent")
+        
+        loader = PyPDFLoader(pdf_path)
+        try:
+            data = loader.load_and_split()
+        except:
+            data = []
+        return data
 
 
     def get_pdf_content(self, pdf_path):
-        data = self._get_reader(pdf_path)
+        data = []
+        if os.path.isdir(pdf_path):
+            files = os.listdir(pdf_path)
+            start_time = time.time()
+            logger.info(f"[{datetime.now()}] Chunking {len(files)} files...")
+            for file in tqdm(files):
+                if file.split(".")[-1] != "pdf":
+                    continue
+                docs = self._get_reader(os.path.join(pdf_path, file))
+                data.extend(docs)
+            end_time = time.time()
+            logger.info(f"[{datetime.now()}] Chunked {len(files)} files in {end_time - start_time} seconds")
+        else:
+            docs = self._get_reader(pdf_path)
+            data.extend(docs)
+
         return data
     

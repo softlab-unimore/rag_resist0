@@ -1,8 +1,10 @@
-PyPDF2==3.0.0
+PyPDF2==3.0.1
 pypdf
 langchain_community==0.2.11
 langchain_huggingface==0.0.3
 langchain_core==0.2.27
 langchain_postgres==0.0.9
 torch==2.4.0
-#unstructured==0.15.1
+psycopg2==2.9.9
+python-dotenv
+datetime==5.5
