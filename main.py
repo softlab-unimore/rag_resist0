@@ -20,17 +20,17 @@ def run(args):
     except:
         raise ValueError(f"{args['method']} is not a valid extraction method")
         
-    vsh = VectorStoreHandler()
+    vsh = VectorStoreHandler(args["model_name"])
     vsh.get_vector_store()
     contents = processor.get_pdf_content(args["pdf"])
     if args["embed"]:
         vsh.load_docs_in_vector_store(contents)
     else:
-        filters = ("source", args["pdf"])
+        filters = (("source", args["pdf"]), ("model_name", args["model_name"]))
         similar_docs = vsh.query_by_similarity(args["query"], filters=filters)
 
     return similar_docs
 
 if __name__ == "__main__":
     args = init_args()
-    run()
+    run(args)

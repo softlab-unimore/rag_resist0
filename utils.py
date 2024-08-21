@@ -12,6 +12,8 @@ def init_args():
                         help=' query to be sent to the vector store')
     parser.add_argument('-e', '--embed', action="store_true", default=False, 
                         help='embed documents and load them into the vector store')
+    parser.add_argument('-M', '--model_name', type=str, required=False, default="sentence-transformers/all-mpnet-base-v2", 
+                        help='name of the neural model to use')
 
     args = vars(parser.parse_args())
 

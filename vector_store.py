@@ -18,9 +18,9 @@ logging.basicConfig(filename="./log/bper.log", level=logging.INFO)
 logger = logging.getLogger("bper.vector_store")
 
 class VectorStoreHandler:
-    def __init__(self):
+    def __init__(self, model_name):
         #self.model_name = "sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2"
-        self.model_name = "sentence-transformers/all-mpnet-base-v2"
+        self.model_name = model_name
 
         if torch.cuda.is_available():
             device = "cuda"
@@ -65,6 +65,11 @@ class VectorStoreHandler:
         start_time = time.time()
         logger.info(f"[{datetime.now()}] Adding {len(docs)} documents into the vector store...")
         hashes = []
+
+        # add model_name to docs metadata
+        for i in range(len(docs)):
+            docs[i].metadata["model_name"] = self.model_name
+
         for doc in docs:
             hashed_input = self.hash_doc(doc)
             hashes.append(hashed_input)
@@ -107,6 +112,6 @@ class VectorStoreHandler:
     @functools.cache
     def query_by_similarity(self, query, k=50, filters=()):
         d_filter = {}
-        if len(filters) > 0:
-            d_filter[filters[0]] = filters[1]
+        for i in range(len(filters)):
+            d_filter[filters[i][0]] = filters[i][1]
         return self.vector_store.similarity_search(query, k=k, filter=d_filter)
