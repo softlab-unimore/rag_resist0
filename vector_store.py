@@ -76,6 +76,7 @@ class VectorStoreHandler:
         
         conn = self.pgconnector.start_db_connection()
         existing_ids = self.pgconnector.get_existing_ids(conn, hashes)
+
         self.pgconnector.close_db_connection(conn)
         
         allowed_docs = []
@@ -114,4 +115,5 @@ class VectorStoreHandler:
         d_filter = {}
         for i in range(len(filters)):
             d_filter[filters[i][0]] = filters[i][1]
+            
         return self.vector_store.similarity_search(query, k=k, filter=d_filter)
