@@ -105,7 +105,7 @@ class VectorStoreHandler:
         logger.info(f"[{datetime.now()}] Removed {ids} documents in {end_time - start_time} seconds")
 
     @functools.cache
-    def query_by_similarity(self, query, k=20, filters=()):
+    def query_by_similarity(self, query, k=50, filters=()):
         d_filter = {}
         if len(filters) > 0:
             d_filter[filters[0]] = filters[1]
