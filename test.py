@@ -29,6 +29,8 @@ def init_args():
                         help=' query to be sent to the vector store')
     parser.add_argument('-e', '--embed', action="store_true", default=False, 
                         help='embed documents and load them into the vector store')
+    parser.add_argument('-M', '--model_name', type=str, required=False, default="sentence-transformers/all-mpnet-base-v2", 
+                        help='name of the neural model to use')
     parser.add_argument('-c', '--checkpoint_rate', type=int, required=False, default=1000,
                         help='specify the amount of steps before checkpointing the results')
     parser.add_argument('-l', '--load_from_checkpoint', action='store_true', default=False,
@@ -85,15 +87,17 @@ if __name__ == "__main__":
          file_split = file_name.split(".")
          if file_split[-1] != "csv":
             continue
-         value = int(file_split[0])
+
+         file_split = file_split[0].split("_")
+         value = int(file_split[1])
 
          if value > max_value:
             max_value = value
 
-      result_df = pd.read_csv(f"./tests/checkpoint/{max_value}.csv").values.tolist()
-      with open(f"./tests/checkpoint/{max_value}.pkl", "rb") as reader:
+      result_df = pd.read_csv(f"./tests/checkpoint/{args['model_name']}_{max_value}.csv").values.tolist()
+      with open(f"./tests/checkpoint/{args['model_name']}_{max_value}.pkl", "rb") as reader:
          acc = pkl.load(reader)
-      with open(f"./tests/checkpoint/k.pkl", "rb") as reader:
+      with open(f"./tests/checkpoint/k_{args['model_name']}.pkl", "rb") as reader:
          last_iter = pkl.load(reader)
       logger.info(f"[{datetime.now()}] Starting from checkpoint {max_value}")
 
@@ -133,12 +137,12 @@ if __name__ == "__main__":
       result_df.append(new_row)
 
       if k % args["checkpoint_rate"] == 0:
-         with open(f"./tests/checkpoint/{k}.pkl", "wb") as output_file:
+         with open(f"./tests/checkpoint/{args['model_name']}_{k}.pkl", "wb") as output_file:
             pkl.dump(acc, output_file)
-         with open(f"./tests/checkpoint/k.pkl", "wb") as output_file:
+         with open(f"./tests/checkpoint/k_{args['model_name']}.pkl", "wb") as output_file:
             pkl.dump(k, output_file)
          tmp_df = pd.DataFrame(result_df)
-         tmp_df.to_csv(f"./tests/checkpoint/{k}.csv", index=False)
+         tmp_df.to_csv(f"./tests/checkpoint/{args['model_name']}_{k}.csv", index=False)
          del tmp_df
 
    end_time = time.time()
@@ -150,4 +154,4 @@ if __name__ == "__main__":
 
    #saving results
    new_df = pd.DataFrame(result_df)
-   result_df.to_csv(f"./tests/result_{datetime.now()}", index=False)
+   result_df.to_csv(f"./tests/{args['model_name']}_result_{datetime.now()}", index=False)
