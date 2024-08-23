@@ -2,6 +2,8 @@ import os
 import logging
 import psycopg2
 
+from langchain_core.documents import Document
+
 from dotenv import load_dotenv
 
 load_dotenv()
@@ -27,11 +29,38 @@ class PgVectorConnector:
     def close_db_connection(self, conn):
         conn.close()
 
-    def get_existing_ids(self, conn, ids):
+    def get_existing_ids(self, conn, ids, table_name):
         formatted_ids = ', '.join(f"'{id}'" for id in ids)
-        query = f"SELECT id FROM {os.environ['POSTGRES_EMB_TABLE_NAME']} WHERE id IN ({formatted_ids});"
+        query = f"SELECT id FROM {table_name} WHERE id IN ({formatted_ids});"
 
         with conn.cursor() as cur:
             cur.execute(query)
             result = cur.fetchall()
         return [row[0] for row in result]
+
+    def add_page(self, conn, elements_to_add: tuple):
+        if len(elements_to_add) != 6:
+            raise ValueError(f"the new row to add in the \"{os.environ['POSTGRES_SPARSE_TABLE_NAME']}\" table must have 4 elements")
+        #if not all([isinstance(el, str) for el in elements_to_add]):
+            #raise ValueError(f"the new row to add in the \"{os.environ['POSTGRES_SPARSE_TABLE_NAME']}\" table can only have str elements")
+
+        query = f"INSERT INTO {os.environ['POSTGRES_SPARSE_TABLE_NAME']} (id, title, source, page_content, page_nbr, model_name) VALUES(%s, %s, %s, %s, %s, %s);"
+
+        with conn.cursor() as cur:
+            cur.execute(query, elements_to_add)
+            conn.commit()
+
+    def get_pages(self, conn, source):
+        query = f"SELECT source, page_nbr, model_name, page_content FROM {os.environ['POSTGRES_SPARSE_TABLE_NAME']} WHERE source=%s;"
+
+        with conn.cursor() as cur:
+            cur.execute(query, (source,))
+            result = cur.fetchall()
+        
+        docs = []
+        for res in result:
+            doc = Document(page_content=res[-1], metadata={"source": res[0], "page": res[1], "model_name": res[2]})
+            docs.append(doc)
+        
+        return docs
+        

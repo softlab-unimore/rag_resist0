@@ -3,7 +3,7 @@ services:
     env_file:
       - .env
     container_name: $DATABASE_CONTAINER_NAME
-    image: ankane/pgvector
+    build: .
     volumes:
       - db_data:/var/lib/postgresql/data
     restart: unless-stopped
