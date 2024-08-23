@@ -26,12 +26,13 @@ class PageProcessor:
         
         loader = PyPDFLoader(pdf_path)
         try:
-            data = loader.load_and_split()
-        except:
+           data = loader.load_and_split()
+        except TypeError as e:
+            logger.warning(f"Chunking failed for {pdf_path} with the following error: {e}")
             data = []
         return data
 
-
+    @functools.cache
     def get_pdf_content(self, pdf_path):
         data = []
         if os.path.isdir(pdf_path):
