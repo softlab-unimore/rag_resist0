@@ -21,6 +21,7 @@ python3 -m venv env
 source env/bin/activate
 ```
 
+Copy the file `sample_config/.env` to the root of the repository and fill the missing values.  
 Build and run the docker-compose file. The container hosts the pgvector database containing the embeddings extracted from the pdf files
 
 ```
