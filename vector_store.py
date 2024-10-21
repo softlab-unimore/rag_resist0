@@ -220,7 +220,7 @@ class SparseStoreHandler(Handler):
     @functools.cache
     def query_by_similarity(self, query, source, k=50, with_scores=False):
         conn = self.pgconnector.start_db_connection()
-        docs = self.pgconnector.get_pages(conn, source)
+        docs, _ = self.pgconnector.get_pages(conn, source)
         self.pgconnector.close_db_connection(conn)
 
         retriever = self.switch_model[self.model_name].from_documents(docs)
@@ -243,21 +243,26 @@ class EnsembleRetrieverHandler(SparseStoreHandler, VectorStoreHandler):
 
     def combine_results(self, semantic_results, syntactic_results, k=50, lmbd = .3):
         results = {}
+        res_debug = {}
         for i,r in enumerate([semantic_results, syntactic_results]):
-            for el in r:
+            for j,el in enumerate(r):
 
                 # semantic and syntactic Documents have different model_names
                 # we change them to an empty string to allow Document matching
 
                 el[0].metadata["model_name"] = ""
+                if i == 0:
+                    el[0].page_content = el[0].page_content.lower()
 
                 hashed_key = self.hash_doc(el[0])
-                score = el[1] if i == 0 else el[1] * lmbd
+                score = -el[1] if i == 0 else el[1]*lmbd
                 if hashed_key not in results.keys():
                     results[hashed_key] = [el[0], score]
+                    res_debug[hashed_key] = [score, 0]
                 else:
                     results[hashed_key][1] += score
-        
+                    res_debug[hashed_key][1] = score
+
         values = results.values()
         values = sorted(values, key=lambda x: x[1], reverse=True)[:k]
 
@@ -279,4 +284,3 @@ class EnsembleRetrieverHandler(SparseStoreHandler, VectorStoreHandler):
         results = self.combine_results(semantic_results, syntactic_results, k=k, lmbd=self.lmbd)
 
         return results
-

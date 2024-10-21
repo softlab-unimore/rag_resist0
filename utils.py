@@ -2,7 +2,7 @@ import argparse
 import logging
 
 def check_args(args):
-    if sum([args["use_dense"], args["use_sparse"], args["use_ensemble"]]) != 1:
+    if sum([args["use_dense"], args["use_sparse"], args["use_ensemble"], args["use_llama"]]) != 1:
         raise ValueError(f"only one argument between \"use_dense\", \"use_sparse\" or \"use_ensemble\" must be specified")
     if args["query"] != '' and args["embed"]:
         raise ValueError(f"you can't embed and query at the same time. Please specify only one argument between \"--embed\" and \"--query\"")
@@ -26,6 +26,10 @@ def init_args():
                         help='use sparse store')
     parser.add_argument('-E', '--use_ensemble', action="store_true", default=False, 
                         help='use ensemble method')
+    parser.add_argument('-u', '--use_llama', action="store_true", required=False, 
+                        help='Use llama3.1 8b')
+    parser.add_argument('-o', '--use_openai', action="store_true", required=False, default=False,
+                        help='Use gpt-4o-mini')
     parser.add_argument('-M', '--model_name', type=str, required=False, default="sentence-transformers/all-mpnet-base-v2", 
                         help='name of the neural model to use')
     parser.add_argument('-S', '--syn_model_name', type=str, required=False, default="tf_idf", 

@@ -2,9 +2,11 @@ import os
 import logging
 import time
 import argparse
+import re
 import pandas as pd
 import numpy as np
 import pickle as pkl
+import ast
 
 from dotenv import load_dotenv
 from datetime import datetime
@@ -53,6 +55,10 @@ def init_args():
                         help='run the tests starting from the latest checkpoint')
     parser.add_argument('-L', '--lambda', type=float, required=False, default=0.3, 
                         help='integration scalar for syntactic features. Only usable with --use_ensemble')
+    parser.add_argument('-u', '--use_llama', action="store_true", required=False, default=False,
+                        help='Use llama3.1 8b')
+    parser.add_argument('-o', '--use_openai', action="store_true", required=False, default=False,
+                        help='Use gpt-4o-mini')
 
     args = vars(parser.parse_args())
     check_args(args)
@@ -88,9 +94,13 @@ def load_df(path: str) -> pd.DataFrame:
 if __name__ == "__main__":
    args = init_args()
 
-   abbrv_model_name = args["model_name"].split("/")[1]
+   if args["use_dense"]:
+      abbrv_model_name = args["model_name"].split("/")[-1]
+   else:
+      abbrv_model_name = args["syn_model_name"].split("/")[-1]
+
    if args["use_ensemble"]:
-      abbrv_model_name += "_"+args["syn_model_name"] + "_"+str(args["lambda"])
+      abbrv_model_name = args["model_name"].split("/")[-1]+"_"+args["syn_model_name"].split("/")[-1] + "_"+str(args["lambda"])
 
    dir_path = f"./tests/checkpoint/{abbrv_model_name}"
    if not os.path.isdir(dir_path):
@@ -133,22 +143,31 @@ if __name__ == "__main__":
 
    start_time = time.time()
    logger.info(f"[{datetime.now()}] Started testing...")
+   correct_pred = []
+   top_k = []
    r = Runnable(args)
+
    for k, (_,row) in enumerate(tqdm(df.iterrows())):
       file_path = f"pdfs/{row['Nome PDF'].iloc[0]}"
+      logger.info(file_path)
 
-      if k < 0:
-         continue
       if not os.path.exists(file_path):
-         #raise FileNotFoundError(f"File {file_path} cannot be found")
+         print(f"[{datetime.now()}] File {file_path} cannot be found")
          logger.warning(f"[{datetime.now()}] File {file_path} cannot be found")
          continue
       
       args["pdf"] = file_path
-      args["query"] = str(row["Descrizione"].iloc[0])
+      if str(row["Descrizione"].iloc[0]) == "nan":
+         args["query"] = str(row["INDICATORE"].iloc[0])
+      else:
+         args["query"] = str(row["Descrizione"].iloc[0])
 
-      result = r.run()
+      r.args = args
 
+      result = r.run() #r.run(gri_code=str(row["GRI"].iloc[0]))
+      if not args["use_ensemble"]:
+         result = [r[0] for r in result]
+        
       top_1 = [result[0].metadata["page"] + 1]
       top_2 = [result[i].metadata["page"] + 1 for i in range(2)]
       top_5 = [result[i].metadata["page"] + 1 for i in range(5)]
@@ -157,37 +176,102 @@ if __name__ == "__main__":
       top_50 = [result[i].metadata["page"] + 1 for i in range(50)]
 
       new_row = []
+
       for j, res in enumerate([top_1, top_2, top_5, top_10, top_20, top_50]):
          if int(row["Valore"]["Pagina"]) in res:
+            if j == 4:
+               logger.info(f"Valore trovato: {row['Valore']['Valore testuale']}")
             acc[j].append(1)
             new_row.append(1)
          else:
+            if j==4:
+               logger.info("Valore non trovato")
             acc[j].append(0)
             new_row.append(0)
-      
+         
       result_df.append(new_row)
-      result_metadata.append([row["Nome PDF"].iloc[0], row["GRI"].iloc[0], row["Descrizione"].iloc[0], row["Valore"]["Pagina"], row["Valore"]["Valore testuale"]])
+      result_metadata.append([
+         row["Nome PDF"].iloc[0], row["GRI"].iloc[0],
+         row["Descrizione"].iloc[0],
+         row["Valore"]["Pagina"],
+         row["Valore"]["Valore testuale"]
+      ])
 
-      if k % args["checkpoint_rate"] == 0:
-         with open(f"{dir_path}/{abbrv_model_name}_{k}.pkl", "wb") as output_file:
-            pkl.dump(acc, output_file)
-         with open(f"{dir_path}/k_{abbrv_model_name}.pkl", "wb") as output_file:
-            pkl.dump(k, output_file)
-         tmp_df = pd.DataFrame(result_df)
-         tmp_df.to_csv(f"{dir_path}/{abbrv_model_name}_{k}.csv", index=False)
-         tmp_df = pd.DataFrame(result_metadata)
-         tmp_df.to_csv(f"{dir_path}/md_{abbrv_model_name}_{k}.csv", index=False)
-         del tmp_df
+      if not (args["use_openai"] or args["use_llama"]):
+         if k % args["checkpoint_rate"] == 0:
+            with open(f"{dir_path}/{abbrv_model_name}_{k}.pkl", "wb") as output_file:
+               pkl.dump(acc, output_file)
+            with open(f"{dir_path}/k_{abbrv_model_name}.pkl", "wb") as output_file:
+               pkl.dump(k, output_file)
+            tmp_df = pd.DataFrame(result_df)
+            tmp_df.to_csv(f"{dir_path}/{abbrv_model_name}_{k}.csv", index=False)
+            tmp_df = pd.DataFrame(result_metadata)
+            tmp_df.to_csv(f"{dir_path}/md_{abbrv_model_name}_{k}.csv", index=False)
+            del tmp_df
 
-   end_time = time.time()
-   logger.info(f"[{datetime.now()}] Finished testing in {end_time - start_time}")
+            end_time = time.time()
+            logger.info(f"[{datetime.now()}] Finished testing in {end_time - start_time}")
 
-   for label_k, acc_k in zip(top_k_labels, acc):
-      perc = round(sum(acc_k) / len(acc_k), 2)
-      logger.info(f"Top@{label_k} accuracy is {perc}")
+            for label_k, acc_k in zip(top_k_labels, acc):
+               perc = round(sum(acc_k) / len(acc_k), 2)
+               logger.info(f"Top@{label_k} accuracy is {perc}")
 
-   #saving results
-   new_df = pd.DataFrame(result_df)
-   new_df.to_csv(f"./tests/{abbrv_model_name}_result_{datetime.now()}.csv", index=False)
-   new_df = pd.DataFrame(result_metadata)
-   new_df.to_csv(f"./tests/md_{abbrv_model_name}_result_{datetime.now()}.csv", index=False)
+            #saving results
+            new_df = pd.DataFrame(result_df)
+            new_df.to_csv(f"./tests/{abbrv_model_name}_result.csv", index=False)
+            new_df = pd.DataFrame(result_metadata)
+            new_df.to_csv(f"./tests/md_{abbrv_model_name}_result.csv", index=False)
+      else:
+         try:
+            result_llm = r.run_value_extraction([doc.page_content for doc in result[:20]])
+         except:
+            logger.warning(f"OpenAI has returned an error")
+
+         for nbr, res in zip(top_20, result_llm):
+            logger.info(f"{nbr}, {res}")
+
+         found = False
+         for res in result_llm:
+            gold = row['Valore']['Valore testuale']
+            if not isinstance(gold, str):
+               gold = str(gold)
+            #gold = gold.replace(",",".").strip()
+            """try:
+               gold = float(gold)
+            except:
+               print(" cannot be casted to float")
+               continue"""
+               
+            try:
+               res = ast.literal_eval(res)
+            except:
+               logger.warning(f"The result given by OpenAI is not a valid Python value: {res}")
+               continue
+
+            try:
+               if gold in res:
+                  found = True
+            except:
+               logger.warning(f"The result given by OpenAI is not an iterable: {res}")
+
+         correct_pred.append(int(found))
+
+      if k%10 == 0:
+         print(correct_pred)
+         print(acc[4])
+         print()
+
+
+   print(correct_pred)
+   print(acc)
+   print()
+   if args["query"]:
+      casual_value_extraction = 0
+      print(f"Value extraction accuracy: {sum(correct_pred) / len(correct_pred)}")
+      print(f"Page filtering accuracy: {sum(acc[4]) / len(acc[4])}")
+      for cp, a in zip(correct_pred, acc[4]):
+         if cp and not a:
+            casual_value_extraction += 1
+      print(f"Percentage of value extracted correctly but from wrong pages: {casual_value_extraction / len(correct_pred)}")
+      print(len(correct_pred) == len(acc[4]))
+      #print(f"Mean top-k for correct predictions: {sum(top_k) / sum(correct_pred)}")

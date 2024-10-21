@@ -1,8 +1,26 @@
 import pandas as pd
 import numpy as np
+import argparse
 import os
 
-df1 = pd.read_csv("all-mpnet-base-v2_tf_idf_result_2024-08-23 14:44:40.060981.csv")
+def init_args():
+    parser = argparse.ArgumentParser(prog='BPER Debugger', description='Debug the results of the RAG pipeline')
+
+    parser.add_argument('-c', '--csv', type=str, required=True,
+                        help='relative URI of the csv file containing the retrieval results')
+    args = vars(parser.parse_args())
+
+    return args
+
+args = init_args()
+#csv = "checkpoint/paraphrase-multilingual-MiniLM-L12-v2_tf_idf_0.3_mixed/paraphrase-multilingual-MiniLM-L12-v2_tf_idf_0.3_mixed_420.csv"
+#csv = "checkpoint/all-mpnet-base-v2_tf_idf_1.0/all-mpnet-base-v2_tf_idf_1.0_200.csv"
+#csv = "paraphrase-multilingual-MiniLM-L12-v2_result.csv"
+#csv = "tf_idf_result.csv"
+#csv = "multilingual-e5-large-instruct_result.csv"
+
+csv = args["csv"]
+df1 = pd.read_csv(csv)
 
 new_header = df1.iloc[0]
 df1 = df1[1:]

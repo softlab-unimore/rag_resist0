@@ -3,12 +3,29 @@ services:
     env_file:
       - .env
     container_name: $DATABASE_CONTAINER_NAME
-    build: .
+    image: ankane/pgvector
     volumes:
       - db_data:/var/lib/postgresql/data
     restart: unless-stopped
     ports:
      - 5432:5432
 
+  #ollama:
+  #  container_name: ollama
+  #  image: ollama/ollama
+  #  deploy:
+  #    resources:
+  #      reservations:
+  #        devices:
+  #        - driver: nvidia
+  #          capabilities: ["gpu"]
+  #          count: all
+  #  volumes:
+  #    - ollama:/root/.ollama
+  #  restart: unless-stopped
+  #  ports:
+  #    - 11434:11434
+
 volumes:
   db_data:
+#  ollama:

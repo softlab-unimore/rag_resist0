@@ -91,7 +91,7 @@ if __name__ == "__main__":
         if "error" not in k:
             continue
         if isinstance(v, bool) and v:
-            result = switch_fn[k](df1, df2, normalize=args["normalize"])
+            result = switch_fn[k](df1, df2, normalize=args["normalize"], key="top@10 accuracy")
             r.append(result.sum())
             print(f"{k}: {result}")
             print()

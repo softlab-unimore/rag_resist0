@@ -58,9 +58,12 @@ class PgVectorConnector:
             result = cur.fetchall()
         
         docs = []
+        docs_lowered = []
         for res in result:
-            doc = Document(page_content=res[-1], metadata={"source": res[0], "page": res[1], "model_name": res[2]})
+            doc = Document(page_content=res[-1], metadata={"page": res[1], "source": res[0], "model_name": res[2]})
+            doc_lowered = Document(page_content=res[-1].lower(), metadata={"page": res[1], "source": res[0], "model_name": res[2]})
             docs.append(doc)
+            docs_lowered.append(doc_lowered)
         
-        return docs
+        return docs, docs_lowered
         
