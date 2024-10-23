@@ -148,6 +148,8 @@ if __name__ == "__main__":
    r = Runnable(args)
 
    for k, (_,row) in enumerate(tqdm(df.iterrows())):
+      if k == 420:
+         break
       file_path = f"pdfs/{row['Nome PDF'].iloc[0]}"
       logger.info(file_path)
 
@@ -218,14 +220,12 @@ if __name__ == "__main__":
 
             #saving results
             new_df = pd.DataFrame(result_df)
+            print(f"./tests/{abbrv_model_name}_result.csv")
             new_df.to_csv(f"./tests/{abbrv_model_name}_result.csv", index=False)
             new_df = pd.DataFrame(result_metadata)
             new_df.to_csv(f"./tests/md_{abbrv_model_name}_result.csv", index=False)
       else:
-         try:
-            result_llm = r.run_value_extraction([doc.page_content for doc in result[:20]])
-         except:
-            logger.warning(f"OpenAI has returned an error")
+         result_llm = r.run_value_extraction([doc for doc in result[:20]])
 
          for nbr, res in zip(top_20, result_llm):
             logger.info(f"{nbr}, {res}")
@@ -236,11 +236,11 @@ if __name__ == "__main__":
             if not isinstance(gold, str):
                gold = str(gold)
             #gold = gold.replace(",",".").strip()
-            """try:
-               gold = float(gold)
-            except:
-               print(" cannot be casted to float")
-               continue"""
+            #try:
+            #   gold = float(gold)
+            #except:
+            #   print(" cannot be casted to float")
+            #   continue
                
             try:
                res = ast.literal_eval(res)
@@ -257,7 +257,7 @@ if __name__ == "__main__":
          correct_pred.append(int(found))
 
       if k%10 == 0:
-         print(correct_pred)
+         #print(correct_pred)
          print(acc[4])
          print()
 
@@ -269,6 +269,7 @@ if __name__ == "__main__":
       casual_value_extraction = 0
       print(f"Value extraction accuracy: {sum(correct_pred) / len(correct_pred)}")
       print(f"Page filtering accuracy: {sum(acc[4]) / len(acc[4])}")
+      print(len(acc[4]))
       for cp, a in zip(correct_pred, acc[4]):
          if cp and not a:
             casual_value_extraction += 1

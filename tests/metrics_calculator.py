@@ -26,9 +26,11 @@ new_header = df1.iloc[0]
 df1 = df1[1:]
 df1.columns = new_header
 
+print(len(pd.to_numeric(df1["top@20 accuracy"])))
+
 print(f'top@1 accuracy: {round(pd.to_numeric(df1["top@1 accuracy"]).sum() / len(pd.to_numeric(df1["top@1 accuracy"])),2)}')
 print(f'top@2 accuracy: {round(pd.to_numeric(df1["top@2 accuracy"]).sum() / len(pd.to_numeric(df1["top@2 accuracy"])),2)}')
 print(f'top@5 accuracy: {round(pd.to_numeric(df1["top@5 accuracy"]).sum() / len(pd.to_numeric(df1["top@5 accuracy"])),2)}')
 print(f'top@10 accuracy: {round(pd.to_numeric(df1["top@10 accuracy"]).sum() / len(pd.to_numeric(df1["top@10 accuracy"])),2)}')
-print(f'top@20 accuracy: {round(pd.to_numeric(df1["top@20 accuracy"]).sum() / len(pd.to_numeric(df1["top@20 accuracy"])),2)}')
+print(f'top@20 accuracy: {round((pd.to_numeric(df1["top@20 accuracy"]).sum()) / (len(pd.to_numeric(df1["top@20 accuracy"]))),2)}')
 print(f'top@50 accuracy: {round(pd.to_numeric(df1["top@50 accuracy"]).sum() / len(pd.to_numeric(df1["top@50 accuracy"])),2)}')

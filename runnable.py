@@ -5,6 +5,7 @@ import traceback
 from dataprocessor import PageProcessor
 from vector_store import VectorStoreHandler, SparseStoreHandler, EnsembleRetrieverHandler
 from llama import LlamaModel, OpenAIModel
+from table_extraction import UnstructuredTableExtractor
 
 logging.basicConfig(filename="./log/bper.log", level=logging.INFO)
 logger = logging.getLogger("bper.main")
@@ -15,6 +16,7 @@ class Runnable:
         self.switch_method = {
             "page": PageProcessor,
         }
+        self.table_extractor = UnstructuredTableExtractor("yolox", "hi_res")
         if args["use_dense"]:
             self.vsh = VectorStoreHandler(args)
         elif args["use_sparse"]:
@@ -34,7 +36,12 @@ class Runnable:
         self.args = args
 
     def run_value_extraction(self, contents):
-        results = self.extr_model.run(contents, self.args["query"])
+        contents_txt = [doc.page_content for doc in contents]
+        tables_html = self.table_extractor.extract_table_unstructured(contents)
+        try:
+            results = self.extr_model.run(contents_txt, self.args["query"], tables_html)
+        except:
+            logger.warning(f"OpenAI has returned an error")
         return results
 
     def run(self, gri_code=None):

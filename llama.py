@@ -60,7 +60,7 @@ class OpenAIModel:
             ],
             [
                 "human",
-                "# TESTO \n\n{}\n\n # DESCRIZIONE \n\n{}\n\n # ISTRUZIONE\n\nEstrai dal TESTO i valori numerici associati alla DESCRIZIONE fornita. Se il valore numerico che cerchi è segnato come numero mancante (e.g. n.a. oppure \ oppure - etc.) ritorna la stringa richiesta così come è (e.g. n.a. oppure \ oppure - etc.). Fornisci l'output come lista python con all'interno i valori numerici estratti come stringhe. Se nessun valore è presente, fornisci una lista vuota. "
+                "# TESTO \n\n{}\n\n # DESCRIZIONE \n\n{}\n\n{} # ISTRUZIONE\n\nEstrai dal TESTO i valori numerici associati alla DESCRIZIONE fornita. Per estrarre i dati dalle tabelle, usa i dati in TABELLE ESTRATTE. Se il valore numerico che cerchi è segnato come numero mancante (e.g. n.a. oppure \ oppure - etc.) ritorna la stringa richiesta così come è (e.g. n.a. oppure \ oppure - etc.). Fornisci l'output come lista python con all'interno i valori numerici estratti come stringhe. Se nessun valore è presente, fornisci una lista vuota. "
             ]
         ]
 
@@ -73,9 +73,17 @@ class OpenAIModel:
 
         return self.llm
 
-    def format_message(self, descr, query):
+    def format_message(self, descr, query, tables_html):
         messages = deepcopy(self.messages)
-        messages[1][1] = messages[1][1].format(descr, query)
+
+        table_txt = "# TABELLE ESTRATTE\n\n"
+        if len(tables_html) == 0:
+            table_txt += f"{[]}\n\n"
+        else:
+            for i, table in enumerate(tables_html):
+                table_txt += f"## TABELLA NUMERO {i}\n\n{table}\n\n"
+
+        messages[1][1] = messages[1][1].format(descr, query, table_txt)
         messages = [tuple(messages[i]) for i in range(len(messages))]
         return messages
 
@@ -86,8 +94,8 @@ class OpenAIModel:
         result = self.llm.invoke(prompt)
         return result
 
-    def run(self, contents, query):
-        batch = [self.format_message(content, query) for content in contents]
+    def run(self, contents, query, tables_html):
+        batch = [self.format_message(content, query, table_html) for content, table_html in zip(contents, tables_html)]
 
         with get_openai_callback() as cb:
             results = [self.invoke(prompt).content for prompt in batch]

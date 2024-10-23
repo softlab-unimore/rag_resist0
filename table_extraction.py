@@ -13,8 +13,8 @@ import torch
 
 class UnstructuredTableExtractor:
     def __init__(self, model_name, strategy):
-        self.model_name = model_name #"yolo-x"
-        self.strategy = strategy # "hi-res"
+        self.model_name = model_name #"yolox"
+        self.strategy = strategy # "hi_res"
 
     @lru_cache
     def cached_partition_pdf(self, filename, strategy, model_name):
@@ -23,7 +23,7 @@ class UnstructuredTableExtractor:
             strategy=strategy,
             infer_table_structure=True,
             model_name=model_name,
-            languages=["eng"],
+            languages=["ita"],
         )
 
     def extract_page(self, pdf_path, page_num):
@@ -39,7 +39,7 @@ class UnstructuredTableExtractor:
         return output_pdf_path
 
     def extract_table_unstructured(self, documents):
-        tables = []
+        tables = [[] for _ in range(len(documents))]
 
         for doc_index, doc in tqdm(enumerate(documents)):
             pdf_name = doc.metadata["source"]
@@ -62,7 +62,7 @@ class UnstructuredTableExtractor:
             tables_in_page = 0
             for element in elements:
                 if element.category == "Table":
-                    tables.append((element, pdf_name, page, tables_in_page))
+                    tables[doc_index].append((element.metadata.text_as_html, pdf_name, page, tables_in_page))
                     tables_in_page+=1
 
             os.remove(temp_pdf_path)

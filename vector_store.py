@@ -251,8 +251,7 @@ class EnsembleRetrieverHandler(SparseStoreHandler, VectorStoreHandler):
                 # we change them to an empty string to allow Document matching
 
                 el[0].metadata["model_name"] = ""
-                if i == 0:
-                    el[0].page_content = el[0].page_content.lower()
+                el[0].page_content = el[0].page_content.lower()
 
                 hashed_key = self.hash_doc(el[0])
                 score = -el[1] if i == 0 else el[1]*lmbd
