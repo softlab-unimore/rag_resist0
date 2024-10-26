@@ -37,9 +37,9 @@ class Runnable:
 
     def run_value_extraction(self, contents):
         contents_txt = [doc.page_content for doc in contents]
-        tables_html = self.table_extractor.extract_table_unstructured(contents)
+        #tables_html = self.table_extractor.extract_table_unstructured(contents)
         try:
-            results = self.extr_model.run(contents_txt, self.args["query"], tables_html)
+            results = self.extr_model.run(contents_txt, self.args["query"]) #, tables_html)
         except:
             logger.warning(f"OpenAI has returned an error")
         return results

@@ -53,6 +53,28 @@ class OpenAIModel:
         self.model_name = model_name
         self.temperature = temperature
 
+        self.preprocess_tables_message = [
+            [
+                "system",
+                "Sei un assistente in grado di fare il preprocessing di tabelle estratte da PDF. Le tue risposte dovranno essere esclusivamente in formato HTML, senza spiegazioni o formato Markdown"
+            ],
+            [
+                "human",
+                "# TESTO \n\n{}\n\n{}\n\n Le tabelle in TABELLE HTML sono strutturalmente corrette, ma possono avere degli errori sui valori numerici. Al contrario, il TESTO può avere testo normale e tabelle senza struttura, ma con i valori numerici corretti. Correggi i valori forniti nelle TABELLE HTML con i rispettivi valori che si trovano in TESTO. Se nessuna tabella è presente, fornisci una lista Python vuota. Se molteplici tabelle sono presenti, ritorna una lista Python avente le tabelle HTML."
+            ]
+        ]
+
+        self.table_message = [
+            [
+                "system",
+                "Sei un assistente che estrae i valori numerici ambientali. Fornisci informazioni esclusivamente in base al contesto fornito. Non fornire informazioni di cui non sei sicuro. Le tue risposte dovranno essere solo codice, senza spiegazioni o formatting Markdown"
+            ],
+            [
+                "human",
+                "{}\n\n# DESCRIZIONE \n\n{}\n\n # ISTRUZIONE\n\nEstrai dalle TABELLE ESTRATTE i valori numerici associati alla DESCRIZIONE fornita. Se il valore numerico che cerchi è segnato come numero mancante (e.g. n.a. oppure \ oppure - etc.) ritorna la stringa richiesta così come è (e.g. n.a. oppure \ oppure - etc.). Fornisci l'output come lista python con all'interno i valori numerici estratti come stringhe. Se nessun valore è presente o nessuna tabella è presente, fornisci una lista vuota. "
+            ]
+        ]
+
         self.messages = [
             [
                 "system",
@@ -60,7 +82,7 @@ class OpenAIModel:
             ],
             [
                 "human",
-                "# TESTO \n\n{}\n\n # DESCRIZIONE \n\n{}\n\n{} # ISTRUZIONE\n\nEstrai dal TESTO i valori numerici associati alla DESCRIZIONE fornita. Per estrarre i dati dalle tabelle, usa i dati in TABELLE ESTRATTE. Se il valore numerico che cerchi è segnato come numero mancante (e.g. n.a. oppure \ oppure - etc.) ritorna la stringa richiesta così come è (e.g. n.a. oppure \ oppure - etc.). Fornisci l'output come lista python con all'interno i valori numerici estratti come stringhe. Se nessun valore è presente, fornisci una lista vuota. "
+                "# TESTO \n\n{}\n\n # DESCRIZIONE \n\n{}\n\n # ISTRUZIONE\n\nEstrai dal TESTO i valori numerici associati alla DESCRIZIONE fornita. Se il valore numerico che cerchi è segnato come numero mancante (e.g. n.a. oppure \ oppure - etc.) ritorna la stringa richiesta così come è (e.g. n.a. oppure \ oppure - etc.). Fornisci l'output come lista python con all'interno i valori numerici estratti come stringhe. Se nessun valore è presente, fornisci una lista vuota. "
             ]
         ]
 
@@ -73,8 +95,22 @@ class OpenAIModel:
 
         return self.llm
 
-    def format_message(self, descr, query, tables_html):
+    def format_message(self, descr, query): #, tables_html):
         messages = deepcopy(self.messages)
+
+        """table_txt = "# TABELLE ESTRATTE\n\n"
+        if len(tables_html) == 0:
+            table_txt += f"{[]}\n\n"
+        else:
+            for i, table in enumerate(tables_html):
+                table_txt += f"## TABELLA NUMERO {i}\n\n{table}\n\n" """
+
+        messages[1][1] = messages[1][1].format(descr, query) #, table_txt)
+        messages = [tuple(messages[i]) for i in range(len(messages))]
+        return messages
+
+    def format_multistep_message1(self, descr, tables_html):
+        preprocess_tables_message = deepcopy(self.preprocess_tables_message)
 
         table_txt = "# TABELLE ESTRATTE\n\n"
         if len(tables_html) == 0:
@@ -83,9 +119,19 @@ class OpenAIModel:
             for i, table in enumerate(tables_html):
                 table_txt += f"## TABELLA NUMERO {i}\n\n{table}\n\n"
 
-        messages[1][1] = messages[1][1].format(descr, query, table_txt)
-        messages = [tuple(messages[i]) for i in range(len(messages))]
-        return messages
+        preprocess_tables_message[1][1] = preprocess_tables_message[1][1].format(descr, table_txt)
+        preprocess_tables_message = [tuple(preprocess_tables_message[i]) for i in range(len(preprocess_tables_message))]
+        return preprocess_tables_message
+
+    def format_multistep_message2(self, tables_html, query):
+        table_message = deepcopy(self.table_message)
+        table_txt = "# TABELLE ESTRATTE"
+        for i in range(len(tables_html)):
+            table_txt += f"\n\n ## TABELLA NUMERO {i+1}\n\n{tables_html[i]}"
+
+        table_message[1][1] = table_message[1][1].format(table_txt, query)
+        table_message = [tuple(table_message[i]) for i in range(len(table_message))]
+        return table_message
 
     def invoke(self, prompt):
         if not hasattr(self, "llm"):
@@ -94,13 +140,16 @@ class OpenAIModel:
         result = self.llm.invoke(prompt)
         return result
 
-    def run(self, contents, query, tables_html):
-        batch = [self.format_message(content, query, table_html) for content, table_html in zip(contents, tables_html)]
+    def run(self, contents, query): #, tables_html):
+        #batch = [self.format_multistep_message1(content, table_html) for content, table_html in zip(contents, tables_html)]
+        batch = [self.format_message(content, query) for content in contents]
 
         with get_openai_callback() as cb:
             results = [self.invoke(prompt).content for prompt in batch]
+            #batch2 = [self.format_multistep_message2(table_html, query) for table_html in zip(results)]
+            #results_final = [self.invoke(prompt).content for prompt in batch2]
             #results_txt = "\n".join(["- "+res for res in results])
 
             logger.info(cb)
         
-        return results
+        return results #results_final

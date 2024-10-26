@@ -65,6 +65,20 @@ def init_args():
 
     return args
 
+def remove_trailing_zeros(sent):
+   if '.' in sent or ',' in sent:
+      return sent.rstrip('0').rstrip('.').rstrip(',')
+   return sent
+
+def remove_not_numbers(sent):
+    return ''.join(char for char in sent if char.isdigit())
+
+def remove_non_numbers_at_end(sent):
+    i = len(sent) - 1
+    while i >= 0 and not sent[i].isdigit():
+        i -= 1
+    return sent[:i+1]
+
 def load_df(path: str) -> pd.DataFrame:
    if path.split(".")[-1] != "csv":
       return pd.DataFrame()
@@ -147,6 +161,8 @@ if __name__ == "__main__":
    top_k = []
    r = Runnable(args)
 
+   #count = 0
+   result_pd = []
    for k, (_,row) in enumerate(tqdm(df.iterrows())):
       if k == 420:
          break
@@ -157,7 +173,10 @@ if __name__ == "__main__":
          print(f"[{datetime.now()}] File {file_path} cannot be found")
          logger.warning(f"[{datetime.now()}] File {file_path} cannot be found")
          continue
-      
+      """if count < 122:
+         count += 1
+         continue"""
+
       args["pdf"] = file_path
       if str(row["Descrizione"].iloc[0]) == "nan":
          args["query"] = str(row["INDICATORE"].iloc[0])
@@ -227,14 +246,13 @@ if __name__ == "__main__":
       else:
          result_llm = r.run_value_extraction([doc for doc in result[:20]])
 
-         for nbr, res in zip(top_20, result_llm):
-            logger.info(f"{nbr}, {res}")
-
          found = False
+         result_pages = {}
+         gold = row['Valore']['Valore testuale']
+         #if not isinstance(gold, str):
+         gold = remove_not_numbers(remove_trailing_zeros(remove_non_numbers_at_end(str(gold))))
+         logger.info(gold)
          for res in result_llm:
-            gold = row['Valore']['Valore testuale']
-            if not isinstance(gold, str):
-               gold = str(gold)
             #gold = gold.replace(",",".").strip()
             #try:
             #   gold = float(gold)
@@ -244,6 +262,10 @@ if __name__ == "__main__":
                
             try:
                res = ast.literal_eval(res)
+               for i in range(len(res)):
+                  res[i] = remove_not_numbers(remove_trailing_zeros(remove_non_numbers_at_end(str(res[i]))))
+
+               logger.info(res)
             except:
                logger.warning(f"The result given by OpenAI is not a valid Python value: {res}")
                continue
@@ -251,17 +273,25 @@ if __name__ == "__main__":
             try:
                if gold in res:
                   found = True
+               if row["Valore"]["Pagina"] not in result_pages.keys():
+                  result_pages[row["Valore"]["Pagina"]] = []
+               result_pages[row["Valore"]["Pagina"]].extend(res)
             except:
                logger.warning(f"The result given by OpenAI is not an iterable: {res}")
 
          correct_pred.append(int(found))
+         result_pd.append([row["Nome PDF"], row["Valore"]["Pagina"], gold, result_pages, found])
 
       if k%10 == 0:
-         #print(correct_pred)
+         with open("test_results.pkl", "wb") as writer:
+            pkl.dump(result_pd, writer)
+         print(correct_pred)
+         logger.info(f"Partial results: {correct_pred}")
          print(acc[4])
          print()
 
-
+   result_pd = pd.DataFrame(result_pd)
+   result_pd.to_csv("final_test_results.csv", index=False)
    print(correct_pred)
    print(acc)
    print()
