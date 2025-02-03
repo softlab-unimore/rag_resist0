@@ -1,0 +1,88 @@
+*************** EP Error ***************
+EP Error /onnxruntime_src/onnxruntime/python/onnxruntime_pybind_state.cc:490 void onnxruntime::python::RegisterTensorRTPluginsAsCustomOps(PySessionOptions&, const onnxruntime::ProviderOptions&) Please install TensorRT libraries as mentioned in the GPU requirements page, make sure they're in the PATH or LD_LIBRARY_PATH, and that your GPU is supported.
+ when using ['TensorrtExecutionProvider', 'CUDAExecutionProvider', 'CPUExecutionProvider']
+Falling back to ['CUDAExecutionProvider', 'CPUExecutionProvider'] and retrying.
+****************************************
+[1]
+[1]
+
+[1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]
+[1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]
+
+[1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]
+[1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]
+
+[1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 1, 1, 1, 1, 1, 1, 1, 1]
+[1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]
+
+[1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]
+[1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]
+
+[1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 1, 1, 0, 0, 1, 1, 1, 1, 1]
+[1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]
+
+[2024-10-26 04:38:39.323659] File pdfs/TERNA -  Relazione finanzaria annuale - 2023.pdf cannot be found
+[2024-10-26 04:38:39.324203] File pdfs/TERNA -  Relazione finanzaria annuale - 2023.pdf cannot be found
+[2024-10-26 04:38:39.324596] File pdfs/TERNA -  Relazione finanzaria annuale - 2023.pdf cannot be found
+[2024-10-26 04:38:39.324967] File pdfs/TERNA -  Relazione finanzaria annuale - 2023.pdf cannot be found
+[2024-10-26 04:38:39.325366] File pdfs/TERNA -  Relazione finanzaria annuale - 2023.pdf cannot be found
+[2024-10-26 04:38:39.325728] File pdfs/TERNA -  Relazione finanzaria annuale - 2023.pdf cannot be found
+[2024-10-26 04:38:39.326086] File pdfs/TERNA -  Relazione finanzaria annuale - 2023.pdf cannot be found
+[2024-10-26 04:38:39.326460] File pdfs/TERNA -  Relazione finanzaria annuale - 2023.pdf cannot be found
+[2024-10-26 04:38:39.326824] File pdfs/TERNA -  Relazione finanzaria annuale - 2023.pdf cannot be found
+[2024-10-26 04:38:39.327191] File pdfs/TERNA -  Relazione finanzaria annuale - 2023.pdf cannot be found
+[2024-10-26 04:38:39.327541] File pdfs/TERNA -  Relazione finanzaria annuale - 2023.pdf cannot be found
+[2024-10-26 04:38:39.327890] File pdfs/TERNA -  Relazione finanzaria annuale - 2023.pdf cannot be found
+[2024-10-26 04:38:39.328240] File pdfs/TERNA -  Relazione finanzaria annuale - 2023.pdf cannot be found
+[2024-10-26 04:38:39.328592] File pdfs/TERNA -  Relazione finanzaria annuale - 2023.pdf cannot be found
+[2024-10-26 04:38:39.329026] File pdfs/TERNA -  Relazione finanzaria annuale - 2023.pdf cannot be found
+[2024-10-26 04:38:39.329401] File pdfs/TERNA -  Relazione finanzaria annuale - 2023.pdf cannot be found
+[2024-10-26 04:38:39.329754] File pdfs/TERNA -  Relazione finanzaria annuale - 2023.pdf cannot be found
+[2024-10-26 04:38:39.330105] File pdfs/TERNA -  Relazione finanzaria annuale - 2023.pdf cannot be found
+[2024-10-26 04:38:39.330459] File pdfs/TERNA -  Relazione finanzaria annuale - 2023.pdf cannot be found
+[2024-10-26 04:38:39.330808] File pdfs/TERNA -  Relazione finanzaria annuale - 2023.pdf cannot be found
+[2024-10-26 04:38:39.331169] File pdfs/TERNA -  Relazione finanzaria annuale - 2023.pdf cannot be found
+[2024-10-26 04:38:39.331514] File pdfs/TERNA -  Relazione finanzaria annuale - 2023.pdf cannot be found
+[2024-10-26 04:38:39.331861] File pdfs/TERNA -  Relazione finanzaria annuale - 2023.pdf cannot be found
+[2024-10-26 04:38:39.332202] File pdfs/TERNA -  Relazione finanzaria annuale - 2023.pdf cannot be found
+[2024-10-26 04:38:39.332540] File pdfs/TERNA -  Relazione finanzaria annuale - 2023.pdf cannot be found
+[2024-10-26 04:38:39.332881] File pdfs/TERNA -  Relazione finanzaria annuale - 2023.pdf cannot be found
+[2024-10-26 04:38:39.333257] File pdfs/TERNA -  Relazione finanzaria annuale - 2023.pdf cannot be found
+[2024-10-26 04:38:39.333605] File pdfs/TERNA -  Relazione finanzaria annuale - 2023.pdf cannot be found
+[2024-10-26 04:38:39.333946] File pdfs/TERNA -  Relazione finanzaria annuale - 2023.pdf cannot be found
+[2024-10-26 04:38:39.334288] File pdfs/TERNA -  Relazione finanzaria annuale - 2023.pdf cannot be found
+[2024-10-26 04:38:39.334630] File pdfs/TERNA -  Relazione finanzaria annuale - 2023.pdf cannot be found
+[2024-10-26 04:38:39.334967] File pdfs/TERNA -  Relazione finanzaria annuale - 2023.pdf cannot be found
+[2024-10-26 04:38:39.335313] File pdfs/TERNA -  Relazione finanzaria annuale - 2023.pdf cannot be found
+[2024-10-26 04:38:39.335662] File pdfs/TERNA -  Relazione finanzaria annuale - 2023.pdf cannot be found
+[2024-10-26 04:38:39.336010] File pdfs/TERNA -  Relazione finanzaria annuale - 2023.pdf cannot be found
+[2024-10-26 04:38:39.336383] File pdfs/TERNA -  Relazione finanzaria annuale - 2023.pdf cannot be found
+[2024-10-26 04:38:39.336750] File pdfs/TERNA -  Relazione finanzaria annuale - 2023.pdf cannot be found
+[2024-10-26 04:38:39.337120] File pdfs/TERNA -  Relazione finanzaria annuale - 2023.pdf cannot be found
+[2024-10-26 04:38:39.337477] File pdfs/TERNA -  Relazione finanzaria annuale - 2023.pdf cannot be found
+[2024-10-26 04:38:39.337827] File pdfs/TERNA -  Relazione finanzaria annuale - 2023.pdf cannot be found
+[2024-10-26 04:38:39.338176] File pdfs/TERNA -  Relazione finanzaria annuale - 2023.pdf cannot be found
+[2024-10-26 04:38:39.338530] File pdfs/TERNA -  Relazione finanzaria annuale - 2023.pdf cannot be found
+[2024-10-26 04:38:39.338877] File pdfs/TERNA -  Relazione finanzaria annuale - 2023.pdf cannot be found
+[2024-10-26 04:38:39.339227] File pdfs/TERNA -  Relazione finanzaria annuale - 2023.pdf cannot be found
+[2024-10-26 04:38:39.339577] File pdfs/TERNA -  Relazione finanzaria annuale - 2023.pdf cannot be found
+[2024-10-26 04:38:39.339925] File pdfs/TERNA -  Relazione finanzaria annuale - 2023.pdf cannot be found
+[2024-10-26 04:38:39.340269] File pdfs/TERNA -  Relazione finanzaria annuale - 2023.pdf cannot be found
+[2024-10-26 04:38:39.340614] File pdfs/TERNA -  Relazione finanzaria annuale - 2023.pdf cannot be found
+[2024-10-26 04:38:39.340959] File pdfs/TERNA -  Relazione finanzaria annuale - 2023.pdf cannot be found
+[2024-10-26 04:38:39.341322] File pdfs/TERNA -  Relazione finanzaria annuale - 2023.pdf cannot be found
+[2024-10-26 04:38:39.341667] File pdfs/TERNA -  Relazione finanzaria annuale - 2023.pdf cannot be found
+[2024-10-26 04:38:39.342013] File pdfs/TERNA -  Relazione finanzaria annuale - 2023.pdf cannot be found
+[2024-10-26 04:38:39.342356] File pdfs/TERNA -  Relazione finanzaria annuale - 2023.pdf cannot be found
+[2024-10-26 04:38:39.342701] File pdfs/TERNA -  Relazione finanzaria annuale - 2023.pdf cannot be found
+[2024-10-26 04:38:39.343049] File pdfs/TERNA -  Relazione finanzaria annuale - 2023.pdf cannot be found
+[2024-10-26 04:38:39.343394] File pdfs/TERNA -  Relazione finanzaria annuale - 2023.pdf cannot be found
+[2024-10-26 04:38:39.343741] File pdfs/TERNA -  Relazione finanzaria annuale - 2023.pdf cannot be found
+[2024-10-26 04:38:39.344122] File pdfs/TERNA -  Relazione finanzaria annuale - 2023.pdf cannot be found
+[2024-10-26 04:38:39.344470] File pdfs/TERNA -  Relazione finanzaria annuale - 2023.pdf cannot be found
+[1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 1, 1, 0, 0, 1, 1, 1, 1, 1, 1, 1, 0, 1, 1, 1, 1, 1, 0, 1, 1]
+[1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 1, 1, 1, 1, 1, 1, 1]
+
+[1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 1, 1, 0, 0, 1, 1, 1, 1, 1, 1, 1, 0, 1, 1, 1, 1, 1, 0, 1, 1, 1, 1, 1, 1, 1, 0, 0, 1, 1, 1]
+[1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 1, 1, 1]
+

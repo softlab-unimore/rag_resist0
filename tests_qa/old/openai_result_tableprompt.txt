@@ -1,0 +1,231 @@
+[1]
+
+[1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]
+
+[1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]
+
+[1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]
+
+[1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]
+
+[1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]
+
+[2024-10-22 12:49:35.472599] File pdfs/TERNA -  Relazione finanzaria annuale - 2023.pdf cannot be found
+[2024-10-22 12:49:35.473094] File pdfs/TERNA -  Relazione finanzaria annuale - 2023.pdf cannot be found
+[2024-10-22 12:49:35.473498] File pdfs/TERNA -  Relazione finanzaria annuale - 2023.pdf cannot be found
+[2024-10-22 12:49:35.473873] File pdfs/TERNA -  Relazione finanzaria annuale - 2023.pdf cannot be found
+[2024-10-22 12:49:35.474239] File pdfs/TERNA -  Relazione finanzaria annuale - 2023.pdf cannot be found
+[2024-10-22 12:49:35.474609] File pdfs/TERNA -  Relazione finanzaria annuale - 2023.pdf cannot be found
+[2024-10-22 12:49:35.474979] File pdfs/TERNA -  Relazione finanzaria annuale - 2023.pdf cannot be found
+[2024-10-22 12:49:35.475391] File pdfs/TERNA -  Relazione finanzaria annuale - 2023.pdf cannot be found
+[2024-10-22 12:49:35.475770] File pdfs/TERNA -  Relazione finanzaria annuale - 2023.pdf cannot be found
+[2024-10-22 12:49:35.476130] File pdfs/TERNA -  Relazione finanzaria annuale - 2023.pdf cannot be found
+[2024-10-22 12:49:35.476479] File pdfs/TERNA -  Relazione finanzaria annuale - 2023.pdf cannot be found
+[2024-10-22 12:49:35.476827] File pdfs/TERNA -  Relazione finanzaria annuale - 2023.pdf cannot be found
+[2024-10-22 12:49:35.477199] File pdfs/TERNA -  Relazione finanzaria annuale - 2023.pdf cannot be found
+[2024-10-22 12:49:35.477551] File pdfs/TERNA -  Relazione finanzaria annuale - 2023.pdf cannot be found
+[2024-10-22 12:49:35.477897] File pdfs/TERNA -  Relazione finanzaria annuale - 2023.pdf cannot be found
+[2024-10-22 12:49:35.478240] File pdfs/TERNA -  Relazione finanzaria annuale - 2023.pdf cannot be found
+[2024-10-22 12:49:35.478593] File pdfs/TERNA -  Relazione finanzaria annuale - 2023.pdf cannot be found
+[2024-10-22 12:49:35.478936] File pdfs/TERNA -  Relazione finanzaria annuale - 2023.pdf cannot be found
+[2024-10-22 12:49:35.479278] File pdfs/TERNA -  Relazione finanzaria annuale - 2023.pdf cannot be found
+[2024-10-22 12:49:35.479627] File pdfs/TERNA -  Relazione finanzaria annuale - 2023.pdf cannot be found
+[2024-10-22 12:49:35.479961] File pdfs/TERNA -  Relazione finanzaria annuale - 2023.pdf cannot be found
+[2024-10-22 12:49:35.480297] File pdfs/TERNA -  Relazione finanzaria annuale - 2023.pdf cannot be found
+[2024-10-22 12:49:35.480651] File pdfs/TERNA -  Relazione finanzaria annuale - 2023.pdf cannot be found
+[2024-10-22 12:49:35.481017] File pdfs/TERNA -  Relazione finanzaria annuale - 2023.pdf cannot be found
+[2024-10-22 12:49:35.481373] File pdfs/TERNA -  Relazione finanzaria annuale - 2023.pdf cannot be found
+[2024-10-22 12:49:35.481710] File pdfs/TERNA -  Relazione finanzaria annuale - 2023.pdf cannot be found
+[2024-10-22 12:49:35.482049] File pdfs/TERNA -  Relazione finanzaria annuale - 2023.pdf cannot be found
+[2024-10-22 12:49:35.482384] File pdfs/TERNA -  Relazione finanzaria annuale - 2023.pdf cannot be found
+[2024-10-22 12:49:35.482721] File pdfs/TERNA -  Relazione finanzaria annuale - 2023.pdf cannot be found
+[2024-10-22 12:49:35.483101] File pdfs/TERNA -  Relazione finanzaria annuale - 2023.pdf cannot be found
+[2024-10-22 12:49:35.483441] File pdfs/TERNA -  Relazione finanzaria annuale - 2023.pdf cannot be found
+[2024-10-22 12:49:35.483778] File pdfs/TERNA -  Relazione finanzaria annuale - 2023.pdf cannot be found
+[2024-10-22 12:49:35.484112] File pdfs/TERNA -  Relazione finanzaria annuale - 2023.pdf cannot be found
+[2024-10-22 12:49:35.484478] File pdfs/TERNA -  Relazione finanzaria annuale - 2023.pdf cannot be found
+[2024-10-22 12:49:35.484822] File pdfs/TERNA -  Relazione finanzaria annuale - 2023.pdf cannot be found
+[2024-10-22 12:49:35.485185] File pdfs/TERNA -  Relazione finanzaria annuale - 2023.pdf cannot be found
+[2024-10-22 12:49:35.485525] File pdfs/TERNA -  Relazione finanzaria annuale - 2023.pdf cannot be found
+[2024-10-22 12:49:35.485859] File pdfs/TERNA -  Relazione finanzaria annuale - 2023.pdf cannot be found
+[2024-10-22 12:49:35.486191] File pdfs/TERNA -  Relazione finanzaria annuale - 2023.pdf cannot be found
+[2024-10-22 12:49:35.486524] File pdfs/TERNA -  Relazione finanzaria annuale - 2023.pdf cannot be found
+[2024-10-22 12:49:35.486852] File pdfs/TERNA -  Relazione finanzaria annuale - 2023.pdf cannot be found
+[2024-10-22 12:49:35.487181] File pdfs/TERNA -  Relazione finanzaria annuale - 2023.pdf cannot be found
+[2024-10-22 12:49:35.487511] File pdfs/TERNA -  Relazione finanzaria annuale - 2023.pdf cannot be found
+[2024-10-22 12:49:35.487841] File pdfs/TERNA -  Relazione finanzaria annuale - 2023.pdf cannot be found
+[2024-10-22 12:49:35.488170] File pdfs/TERNA -  Relazione finanzaria annuale - 2023.pdf cannot be found
+[2024-10-22 12:49:35.488495] File pdfs/TERNA -  Relazione finanzaria annuale - 2023.pdf cannot be found
+[2024-10-22 12:49:35.488835] File pdfs/TERNA -  Relazione finanzaria annuale - 2023.pdf cannot be found
+[2024-10-22 12:49:35.489193] File pdfs/TERNA -  Relazione finanzaria annuale - 2023.pdf cannot be found
+[2024-10-22 12:49:35.489526] File pdfs/TERNA -  Relazione finanzaria annuale - 2023.pdf cannot be found
+[2024-10-22 12:49:35.489851] File pdfs/TERNA -  Relazione finanzaria annuale - 2023.pdf cannot be found
+[2024-10-22 12:49:35.490189] File pdfs/TERNA -  Relazione finanzaria annuale - 2023.pdf cannot be found
+[2024-10-22 12:49:35.490552] File pdfs/TERNA -  Relazione finanzaria annuale - 2023.pdf cannot be found
+[2024-10-22 12:49:35.490887] File pdfs/TERNA -  Relazione finanzaria annuale - 2023.pdf cannot be found
+[2024-10-22 12:49:35.491211] File pdfs/TERNA -  Relazione finanzaria annuale - 2023.pdf cannot be found
+[2024-10-22 12:49:35.491536] File pdfs/TERNA -  Relazione finanzaria annuale - 2023.pdf cannot be found
+[2024-10-22 12:49:35.491862] File pdfs/TERNA -  Relazione finanzaria annuale - 2023.pdf cannot be found
+[2024-10-22 12:49:35.492182] File pdfs/TERNA -  Relazione finanzaria annuale - 2023.pdf cannot be found
+[2024-10-22 12:49:35.492501] File pdfs/TERNA -  Relazione finanzaria annuale - 2023.pdf cannot be found
+[2024-10-22 12:49:35.492822] File pdfs/TERNA -  Relazione finanzaria annuale - 2023.pdf cannot be found
+[1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 1, 1, 1, 1, 1, 1, 1]
+
+[1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 1, 1, 1]
+
+[1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 1, 1, 1, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1]
+
+[1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 1, 1, 1, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]
+
+[1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 1, 1, 1, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]
+
+[1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 1, 1, 1, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 1, 1, 1, 1, 1, 1, 1, 1]
+
+[1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 1, 1, 1, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 1, 1, 1, 1]
+
+[1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 1, 1, 1, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]
+
+[1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 1, 1, 1, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]
+
+[1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 1, 1, 1, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]
+
+[2024-10-22 16:02:39.555908] File pdfs/LEONARDO - Bilancio Integrato 2023_12032024_per sito cannot be found
+[2024-10-22 16:02:39.556369] File pdfs/LEONARDO - Bilancio Integrato 2023_12032024_per sito cannot be found
+[2024-10-22 16:02:39.556766] File pdfs/LEONARDO - Bilancio Integrato 2023_12032024_per sito cannot be found
+[2024-10-22 16:02:39.557171] File pdfs/LEONARDO - Bilancio Integrato 2023_12032024_per sito cannot be found
+[2024-10-22 16:02:39.557558] File pdfs/LEONARDO - Bilancio Integrato 2023_12032024_per sito cannot be found
+[2024-10-22 16:02:39.557927] File pdfs/LEONARDO - Bilancio Integrato 2023_12032024_per sito cannot be found
+[2024-10-22 16:02:39.558302] File pdfs/LEONARDO - Bilancio Integrato 2023_12032024_per sito cannot be found
+[2024-10-22 16:02:39.558679] File pdfs/LEONARDO - Bilancio Integrato 2023_12032024_per sito cannot be found
+[2024-10-22 16:02:39.559042] File pdfs/LEONARDO - Bilancio Integrato 2023_12032024_per sito cannot be found
+[2024-10-22 16:02:39.559404] File pdfs/LEONARDO - Bilancio Integrato 2023_12032024_per sito cannot be found
+[2024-10-22 16:02:39.559754] File pdfs/LEONARDO - Bilancio Integrato 2023_12032024_per sito cannot be found
+[2024-10-22 16:02:39.560102] File pdfs/LEONARDO - Bilancio Integrato 2023_12032024_per sito cannot be found
+[2024-10-22 16:02:39.560448] File pdfs/LEONARDO - Bilancio Integrato 2023_12032024_per sito cannot be found
+[2024-10-22 16:02:39.560796] File pdfs/LEONARDO - Bilancio Integrato 2023_12032024_per sito cannot be found
+[2024-10-22 16:02:39.561158] File pdfs/LEONARDO - Bilancio Integrato 2023_12032024_per sito cannot be found
+[2024-10-22 16:02:39.561507] File pdfs/LEONARDO - Bilancio Integrato 2023_12032024_per sito cannot be found
+[2024-10-22 16:02:39.561856] File pdfs/LEONARDO - Bilancio Integrato 2023_12032024_per sito cannot be found
+[2024-10-22 16:02:39.562247] File pdfs/LEONARDO - Bilancio Integrato 2023_12032024_per sito cannot be found
+[2024-10-22 16:02:39.562596] File pdfs/LEONARDO - Bilancio Integrato 2023_12032024_per sito cannot be found
+[2024-10-22 16:02:39.562941] File pdfs/LEONARDO - Bilancio Integrato 2023_12032024_per sito cannot be found
+[2024-10-22 16:02:39.563292] File pdfs/LEONARDO - Bilancio Integrato 2023_12032024_per sito cannot be found
+[2024-10-22 16:02:39.563641] File pdfs/LEONARDO - Bilancio Integrato 2023_12032024_per sito cannot be found
+[2024-10-22 16:02:39.563986] File pdfs/LEONARDO - Bilancio Integrato 2023_12032024_per sito cannot be found
+[2024-10-22 16:02:39.564334] File pdfs/LEONARDO - Bilancio Integrato 2023_12032024_per sito cannot be found
+[2024-10-22 16:02:39.564680] File pdfs/LEONARDO - Bilancio Integrato 2023_12032024_per sito cannot be found
+[2024-10-22 16:02:39.565036] File pdfs/LEONARDO - Bilancio Integrato 2023_12032024_per sito cannot be found
+[2024-10-22 16:02:39.565397] File pdfs/LEONARDO - Bilancio Integrato 2023_12032024_per sito cannot be found
+[2024-10-22 16:02:39.565743] File pdfs/LEONARDO - Bilancio Integrato 2023_12032024_per sito cannot be found
+[2024-10-22 16:02:39.566087] File pdfs/LEONARDO - Bilancio Integrato 2023_12032024_per sito cannot be found
+[2024-10-22 16:02:39.566429] File pdfs/LEONARDO - Bilancio Integrato 2023_12032024_per sito cannot be found
+[2024-10-22 16:02:39.566776] File pdfs/LEONARDO - Bilancio Integrato 2023_12032024_per sito cannot be found
+[2024-10-22 16:02:39.567124] File pdfs/LEONARDO - Bilancio Integrato 2023_12032024_per sito cannot be found
+[2024-10-22 16:02:39.567466] File pdfs/LEONARDO - Bilancio Integrato 2023_12032024_per sito cannot be found
+[2024-10-22 16:02:39.567808] File pdfs/LEONARDO - Bilancio Integrato 2023_12032024_per sito cannot be found
+[2024-10-22 16:02:39.568147] File pdfs/LEONARDO - Bilancio Integrato 2023_12032024_per sito cannot be found
+[2024-10-22 16:02:39.568484] File pdfs/LEONARDO - Bilancio Integrato 2023_12032024_per sito cannot be found
+[2024-10-22 16:02:39.568828] File pdfs/LEONARDO - Bilancio Integrato 2023_12032024_per sito cannot be found
+[2024-10-22 16:02:39.569217] File pdfs/LEONARDO - Bilancio Integrato 2023_12032024_per sito cannot be found
+[2024-10-22 16:02:39.569579] File pdfs/LEONARDO - Bilancio Integrato 2023_12032024_per sito cannot be found
+[2024-10-22 16:02:39.569924] File pdfs/LEONARDO - Bilancio Integrato 2023_12032024_per sito cannot be found
+[2024-10-22 16:02:39.570269] File pdfs/LEONARDO - Bilancio Integrato 2023_12032024_per sito cannot be found
+[2024-10-22 16:02:39.570609] File pdfs/LEONARDO - Bilancio Integrato 2023_12032024_per sito cannot be found
+[2024-10-22 16:02:39.570948] File pdfs/LEONARDO - Bilancio Integrato 2023_12032024_per sito cannot be found
+[2024-10-22 16:02:39.571292] File pdfs/LEONARDO - Bilancio Integrato 2023_12032024_per sito cannot be found
+[2024-10-22 16:02:39.571632] File pdfs/LEONARDO - Bilancio Integrato 2023_12032024_per sito cannot be found
+[2024-10-22 16:02:39.571963] File pdfs/LEONARDO - Bilancio Integrato 2023_12032024_per sito cannot be found
+[2024-10-22 16:02:39.572299] File pdfs/LEONARDO - Bilancio Integrato 2023_12032024_per sito cannot be found
+[2024-10-22 16:02:39.572633] File pdfs/LEONARDO - Bilancio Integrato 2023_12032024_per sito cannot be found
+[2024-10-22 16:02:39.572977] File pdfs/LEONARDO - Bilancio Integrato 2023_12032024_per sito cannot be found
+[2024-10-22 16:02:39.573345] File pdfs/LEONARDO - Bilancio Integrato 2023_12032024_per sito cannot be found
+[2024-10-22 16:02:39.573685] File pdfs/LEONARDO - Bilancio Integrato 2023_12032024_per sito cannot be found
+[2024-10-22 16:02:39.574020] File pdfs/LEONARDO - Bilancio Integrato 2023_12032024_per sito cannot be found
+[2024-10-22 16:02:39.574747] File pdfs/LEONARDO - Bilancio Integrato 2023_12032024_per sito cannot be found
+[2024-10-22 16:02:39.575146] File pdfs/LEONARDO - Bilancio Integrato 2023_12032024_per sito cannot be found
+[2024-10-22 16:02:39.575512] File pdfs/LEONARDO - Bilancio Integrato 2023_12032024_per sito cannot be found
+[2024-10-22 16:02:39.575872] File pdfs/LEONARDO - Bilancio Integrato 2023_12032024_per sito cannot be found
+[2024-10-22 16:02:39.576222] File pdfs/LEONARDO - Bilancio Integrato 2023_12032024_per sito cannot be found
+[2024-10-22 16:02:39.576570] File pdfs/LEONARDO - Bilancio Integrato 2023_12032024_per sito cannot be found
+[2024-10-22 16:02:39.576965] File pdfs/LEONARDO - Bilancio Integrato 2023_12032024_per sito cannot be found
+[2024-10-22 16:02:39.577355] File pdfs/LEONARDO - Bilancio Integrato 2023_12032024_per sito cannot be found
+[2024-10-22 16:02:39.577706] File pdfs/LEONARDO - Bilancio Integrato 2023_12032024_per sito cannot be found
+[2024-10-22 16:02:39.578059] File pdfs/LEONARDO - Bilancio Integrato 2023_12032024_per sito cannot be found
+[2024-10-22 16:02:39.578417] File pdfs/LEONARDO - Bilancio Integrato 2023_12032024_per sito cannot be found
+[2024-10-22 16:02:39.578777] File pdfs/IREN - Bilancio di Sostenibilità 2023.pdf cannot be found
+[2024-10-22 16:02:39.579145] File pdfs/IREN - Bilancio di Sostenibilità 2023.pdf cannot be found
+[2024-10-22 16:02:39.579500] File pdfs/IREN - Bilancio di Sostenibilità 2023.pdf cannot be found
+[2024-10-22 16:02:39.579844] File pdfs/IREN - Bilancio di Sostenibilità 2023.pdf cannot be found
+[2024-10-22 16:02:39.580190] File pdfs/IREN - Bilancio di Sostenibilità 2023.pdf cannot be found
+[2024-10-22 16:02:39.580534] File pdfs/IREN - Bilancio di Sostenibilità 2023.pdf cannot be found
+[2024-10-22 16:02:39.580874] File pdfs/IREN - Bilancio di Sostenibilità 2023.pdf cannot be found
+[2024-10-22 16:02:39.581240] File pdfs/IREN - Bilancio di Sostenibilità 2023.pdf cannot be found
+[2024-10-22 16:02:39.581588] File pdfs/IREN - Bilancio di Sostenibilità 2023.pdf cannot be found
+[2024-10-22 16:02:39.581936] File pdfs/IREN - Bilancio di Sostenibilità 2023.pdf cannot be found
+[2024-10-22 16:02:39.582279] File pdfs/IREN - Bilancio di Sostenibilità 2023.pdf cannot be found
+[2024-10-22 16:02:39.582623] File pdfs/IREN - Bilancio di Sostenibilità 2023.pdf cannot be found
+[2024-10-22 16:02:39.582981] File pdfs/IREN - Bilancio di Sostenibilità 2023.pdf cannot be found
+[2024-10-22 16:02:39.583326] File pdfs/IREN - Bilancio di Sostenibilità 2023.pdf cannot be found
+[2024-10-22 16:02:39.583670] File pdfs/IREN - Bilancio di Sostenibilità 2023.pdf cannot be found
+[2024-10-22 16:02:39.584118] File pdfs/IREN - Bilancio di Sostenibilità 2023.pdf cannot be found
+[2024-10-22 16:02:39.584472] File pdfs/IREN - Bilancio di Sostenibilità 2023.pdf cannot be found
+[2024-10-22 16:02:39.584842] File pdfs/IREN - Bilancio di Sostenibilità 2023.pdf cannot be found
+[2024-10-22 16:02:39.585248] File pdfs/IREN - Bilancio di Sostenibilità 2023.pdf cannot be found
+[2024-10-22 16:02:39.585621] File pdfs/IREN - Bilancio di Sostenibilità 2023.pdf cannot be found
+[2024-10-22 16:02:39.585961] File pdfs/IREN - Bilancio di Sostenibilità 2023.pdf cannot be found
+[2024-10-22 16:02:39.586303] File pdfs/IREN - Bilancio di Sostenibilità 2023.pdf cannot be found
+[2024-10-22 16:02:39.586641] File pdfs/IREN - Bilancio di Sostenibilità 2023.pdf cannot be found
+[2024-10-22 16:02:39.586980] File pdfs/IREN - Bilancio di Sostenibilità 2023.pdf cannot be found
+[2024-10-22 16:02:39.587320] File pdfs/IREN - Bilancio di Sostenibilità 2023.pdf cannot be found
+[2024-10-22 16:02:39.587656] File pdfs/IREN - Bilancio di Sostenibilità 2023.pdf cannot be found
+[2024-10-22 16:02:39.587997] File pdfs/IREN - Bilancio di Sostenibilità 2023.pdf cannot be found
+[2024-10-22 16:02:39.588336] File pdfs/IREN - Bilancio di Sostenibilità 2023.pdf cannot be found
+[2024-10-22 16:02:39.588672] File pdfs/IREN - Bilancio di Sostenibilità 2023.pdf cannot be found
+[2024-10-22 16:02:39.589029] File pdfs/IREN - Bilancio di Sostenibilità 2023.pdf cannot be found
+[2024-10-22 16:02:39.589388] File pdfs/IREN - Bilancio di Sostenibilità 2023.pdf cannot be found
+[2024-10-22 16:02:39.589720] File pdfs/IREN - Bilancio di Sostenibilità 2023.pdf cannot be found
+[2024-10-22 16:02:39.589955] File pdfs/IREN - Bilancio di Sostenibilità 2023.pdf cannot be found
+[2024-10-22 16:02:39.590190] File pdfs/IREN - Bilancio di Sostenibilità 2023.pdf cannot be found
+[2024-10-22 16:02:39.590421] File pdfs/IREN - Bilancio di Sostenibilità 2023.pdf cannot be found
+[2024-10-22 16:02:39.590653] File pdfs/IREN - Bilancio di Sostenibilità 2023.pdf cannot be found
+[2024-10-22 16:02:39.590888] File pdfs/IREN - Bilancio di Sostenibilità 2023.pdf cannot be found
+[2024-10-22 16:02:39.591121] File pdfs/IREN - Bilancio di Sostenibilità 2023.pdf cannot be found
+[2024-10-22 16:02:39.591359] File pdfs/IREN - Bilancio di Sostenibilità 2023.pdf cannot be found
+[2024-10-22 16:02:39.591592] File pdfs/IREN - Bilancio di Sostenibilità 2023.pdf cannot be found
+[2024-10-22 16:02:39.591881] File pdfs/IREN - Bilancio di Sostenibilità 2023.pdf cannot be found
+[2024-10-22 16:02:39.592135] File pdfs/IREN - Bilancio di Sostenibilità 2023.pdf cannot be found
+[2024-10-22 16:02:39.592378] File pdfs/IREN - Bilancio di Sostenibilità 2023.pdf cannot be found
+[2024-10-22 16:02:39.592616] File pdfs/IREN - Bilancio di Sostenibilità 2023.pdf cannot be found
+[2024-10-22 16:02:39.592850] File pdfs/IREN - Bilancio di Sostenibilità 2023.pdf cannot be found
+[2024-10-22 16:02:39.593101] File pdfs/IREN - Bilancio di Sostenibilità 2023.pdf cannot be found
+[2024-10-22 16:02:39.593337] File pdfs/IREN - Bilancio di Sostenibilità 2023.pdf cannot be found
+[2024-10-22 16:02:39.593575] File pdfs/IREN - Bilancio di Sostenibilità 2023.pdf cannot be found
+[2024-10-22 16:02:39.593811] File pdfs/IREN - Bilancio di Sostenibilità 2023.pdf cannot be found
+[2024-10-22 16:02:39.594041] File pdfs/IREN - Bilancio di Sostenibilità 2023.pdf cannot be found
+[2024-10-22 16:02:39.594272] File pdfs/IREN - Bilancio di Sostenibilità 2023.pdf cannot be found
+[2024-10-22 16:02:39.594504] File pdfs/IREN - Bilancio di Sostenibilità 2023.pdf cannot be found
+[2024-10-22 16:02:39.594733] File pdfs/IREN - Bilancio di Sostenibilità 2023.pdf cannot be found
+[1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 1, 1, 1, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]
+
+[1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 1, 1, 1, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]
+
+[1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 1, 1, 1, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]
+
+[1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 1, 1, 1, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]
+
+[1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 1, 1, 1, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 1, 1]
+
+[1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 1, 1, 1, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]
+
+[1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 1, 1, 1, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]
+
+[1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 1, 1, 1, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]
+
+[1, 1, 1, 1, 0, 0, 0, 1, 1, 1, 1, 1, 0, 1, 1, 1, 1, 1, 0, 0, 1, 1, 0, 1, 0, 1, 0, 0, 1, 0, 0, 1, 0, 0, 1, 0, 0, 1, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 0, 1, 1, 1, 1, 0, 0, 1, 0, 1, 1, 1, 1, 1, 0, 0, 1, 0, 1, 0, 1, 0, 0, 0, 0, 0, 1, 0, 1, 1, 0, 1, 0, 0, 0, 1, 0, 0, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 1, 1, 0, 1, 1, 0, 1, 0, 1, 0, 0, 0, 0, 1, 1, 0, 0, 1, 1, 0, 1, 1, 1, 1, 0, 1, 0, 0, 0, 1, 0, 1, 1, 0, 1, 1, 0, 1, 1, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 0, 1, 0, 0, 1, 0, 0, 1, 0, 1, 1, 0, 0, 1, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 1, 1, 0, 1, 1, 0, 1, 1, 0, 1, 0, 0, 1, 1, 0, 1, 1, 0, 1, 0, 0, 1, 1, 0, 1, 0, 1, 0, 1, 1, 1]
+[[1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 0, 0, 0, 0, 0, 0, 1, 1, 1, 0, 0, 0, 0, 1, 1, 0, 0, 0, 0, 1, 1, 0, 1, 1, 1, 1, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 1, 1, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 1, 1, 1, 1, 1, 1, 1, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 1, 1, 1, 1, 0, 1, 0, 1, 1, 1, 1, 1, 0, 1, 1, 1, 1, 0, 0, 0, 1, 1, 1, 0, 0, 0, 0, 0, 0, 1, 1, 1, 0, 0, 0, 0, 0, 1, 0, 0, 0], [1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 1, 1, 0, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 1, 1, 0, 1, 0, 1, 0, 0, 1, 1, 1, 0, 0, 0, 1, 1, 0, 0, 0, 0, 1, 1, 0, 1, 1, 1, 0, 0, 0, 1, 1, 1, 1, 1, 1, 0, 0, 1, 1, 1, 1, 0, 0, 1, 1, 1, 1, 0, 1, 1, 1, 1, 0, 0, 0, 1, 0, 0, 1, 1, 1, 0, 0, 0, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 1, 1, 1, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 1, 1, 1, 1, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 1, 1, 1, 0, 0, 0, 0, 0, 0, 1, 1, 1, 0, 0, 0, 0, 0, 1, 0, 0, 0], [1, 1, 1, 0, 0, 0, 0, 1, 1, 0, 0, 1, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 1, 1, 0, 0, 0, 0, 0, 0, 0, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 0, 1, 1, 1, 0, 1, 0, 1, 0, 1, 1, 1, 1, 0, 0, 0, 1, 1, 0, 1, 1, 0, 1, 1, 1, 1, 1, 1, 1, 1, 0, 1, 1, 1, 1, 1, 1, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 1, 1, 1, 1, 0, 0, 1, 1, 0, 0, 1, 1, 1, 0, 0, 1, 1, 1, 1, 1, 1, 1, 0, 1, 0, 0, 0, 0, 0, 0, 1, 1, 1, 0, 0, 0, 0, 0, 0, 1, 1, 0, 0, 0, 0, 1, 1, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 1, 1, 1, 1, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 1, 1, 1, 0, 0, 0, 1, 0, 1, 0, 1, 0], [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 1, 1, 1, 1, 1, 0, 0, 0, 1, 1, 0, 0, 0, 0, 1, 1, 1, 1, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 1, 1, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 1, 0, 1, 1, 0, 1, 1, 1, 1, 1, 0, 1, 1, 1, 1, 1, 1, 1, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 1, 1, 1, 0, 1, 0, 1, 0, 1, 0, 1, 0], [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 1, 1, 1, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1], [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 1, 1, 1, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]]
+
+Value extraction accuracy: 0.49795918367346936
+Page filtering accuracy: 0.9714285714285714
+245
+Percentage of value extracted correctly but from wrong pages: 0.004081632653061225
+True

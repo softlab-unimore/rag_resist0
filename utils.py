@@ -12,8 +12,6 @@ def check_args(args):
 def init_args():
     parser = argparse.ArgumentParser(prog='BPER Table Extractor', description='Extract tables from companies non financial statements')
 
-    parser.add_argument('-m', '--method', choices=["page"], default="page", type=str,
-                        help='extraction method')
     parser.add_argument('-p', '--pdf', type=str, required=True, default='',
                         help='relative URI of the pdf file to analyze')
     parser.add_argument('-q', '--query', type=str, required=False, default='',
@@ -28,14 +26,18 @@ def init_args():
                         help='use ensemble method')
     parser.add_argument('-u', '--use_llama', action="store_true", required=False, 
                         help='Use llama3.1 8b')
-    parser.add_argument('-o', '--use_openai', action="store_true", required=False, default=False,
+    parser.add_argument('-o', '--use_openai', action="store_true", required=False, default=True,
                         help='Use gpt-4o-mini')
-    parser.add_argument('-M', '--model_name', type=str, required=False, default="sentence-transformers/all-mpnet-base-v2", 
+    parser.add_argument('-M', '--model_name', type=str, required=False, default="intfloat/multilingual-e5-large-instruct", 
                         help='name of the neural model to use')
     parser.add_argument('-S', '--syn_model_name', type=str, required=False, default="tf_idf", 
                         help='name of the sparse model to use')
     parser.add_argument('-L', '--lambda', type=float, required=False, default=0.3, 
                         help='integration scalar for syntactic features. Only usable with --use_ensemble')
+    parser.add_argument('-k', '--k', type=float, required=False, default=20, 
+                        help='Number of most relevant pages filtered in the pre-fetching phase')
+    parser.add_argument('-f', '--fast', action="store_true", default=False, 
+                        help='skip table extraction phase')
 
     args = vars(parser.parse_args())
     check_args(args)

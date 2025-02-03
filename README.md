@@ -1,4 +1,4 @@
-# BPER Indicator Extractor
+# Indicator Extractor
 
 
 

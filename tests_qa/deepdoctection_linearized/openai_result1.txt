@@ -1,0 +1,267 @@
+🔭 OpenTelemetry Tracing Details 🔭
+|  Phoenix Project: bper-tabula
+|  Span Processor: SimpleSpanProcessor
+|  Collector Endpoint: http://localhost:6006/v1/traces
+|  Transport: HTTP
+|  Transport Headers: {}
+|  
+|  Using a default SpanProcessor. `add_span_processor` will overwrite this default.
+|  
+|  `register` has set this TracerProvider as the global OpenTelemetry default.
+|  To disable this behavior, call `register` with `set_global_tracer_provider=False`.
+
+[1]
+[1]
+
+[1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]
+[1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]
+
+[1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 1, 1, 1]
+[1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]
+
+[1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 1, 1, 1, 1, 0, 0, 1, 1, 0, 1, 1, 0, 1]
+[1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]
+
+[1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 1, 1, 1, 1, 0, 0, 1, 1, 0, 1, 1, 0, 1, 1, 0, 1, 1, 0, 1, 1, 0, 1, 1]
+[1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]
+
+[1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 1, 1, 1, 1, 0, 0, 1, 1, 0, 1, 1, 0, 1, 1, 0, 1, 1, 0, 1, 1, 0, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+[1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]
+
+[2024-11-07 09:17:07.273108] File pdfs/TERNA -  Relazione finanzaria annuale - 2023.pdf cannot be found
+[2024-11-07 09:17:07.273607] File pdfs/TERNA -  Relazione finanzaria annuale - 2023.pdf cannot be found
+[2024-11-07 09:17:07.274043] File pdfs/TERNA -  Relazione finanzaria annuale - 2023.pdf cannot be found
+[2024-11-07 09:17:07.274513] File pdfs/TERNA -  Relazione finanzaria annuale - 2023.pdf cannot be found
+[2024-11-07 09:17:07.274934] File pdfs/TERNA -  Relazione finanzaria annuale - 2023.pdf cannot be found
+[2024-11-07 09:17:07.275372] File pdfs/TERNA -  Relazione finanzaria annuale - 2023.pdf cannot be found
+[2024-11-07 09:17:07.275786] File pdfs/TERNA -  Relazione finanzaria annuale - 2023.pdf cannot be found
+[2024-11-07 09:17:07.276185] File pdfs/TERNA -  Relazione finanzaria annuale - 2023.pdf cannot be found
+[2024-11-07 09:17:07.276584] File pdfs/TERNA -  Relazione finanzaria annuale - 2023.pdf cannot be found
+[2024-11-07 09:17:07.276987] File pdfs/TERNA -  Relazione finanzaria annuale - 2023.pdf cannot be found
+[2024-11-07 09:17:07.277379] File pdfs/TERNA -  Relazione finanzaria annuale - 2023.pdf cannot be found
+[2024-11-07 09:17:07.277766] File pdfs/TERNA -  Relazione finanzaria annuale - 2023.pdf cannot be found
+[2024-11-07 09:17:07.278185] File pdfs/TERNA -  Relazione finanzaria annuale - 2023.pdf cannot be found
+[2024-11-07 09:17:07.278611] File pdfs/TERNA -  Relazione finanzaria annuale - 2023.pdf cannot be found
+[2024-11-07 09:17:07.279004] File pdfs/TERNA -  Relazione finanzaria annuale - 2023.pdf cannot be found
+[2024-11-07 09:17:07.279394] File pdfs/TERNA -  Relazione finanzaria annuale - 2023.pdf cannot be found
+[2024-11-07 09:17:07.279779] File pdfs/TERNA -  Relazione finanzaria annuale - 2023.pdf cannot be found
+[2024-11-07 09:17:07.280172] File pdfs/TERNA -  Relazione finanzaria annuale - 2023.pdf cannot be found
+[2024-11-07 09:17:07.280571] File pdfs/TERNA -  Relazione finanzaria annuale - 2023.pdf cannot be found
+[2024-11-07 09:17:07.280961] File pdfs/TERNA -  Relazione finanzaria annuale - 2023.pdf cannot be found
+[2024-11-07 09:17:07.281353] File pdfs/TERNA -  Relazione finanzaria annuale - 2023.pdf cannot be found
+[2024-11-07 09:17:07.281749] File pdfs/TERNA -  Relazione finanzaria annuale - 2023.pdf cannot be found
+[2024-11-07 09:17:07.282137] File pdfs/TERNA -  Relazione finanzaria annuale - 2023.pdf cannot be found
+[2024-11-07 09:17:07.282578] File pdfs/TERNA -  Relazione finanzaria annuale - 2023.pdf cannot be found
+[2024-11-07 09:17:07.282969] File pdfs/TERNA -  Relazione finanzaria annuale - 2023.pdf cannot be found
+[2024-11-07 09:17:07.283354] File pdfs/TERNA -  Relazione finanzaria annuale - 2023.pdf cannot be found
+[2024-11-07 09:17:07.283738] File pdfs/TERNA -  Relazione finanzaria annuale - 2023.pdf cannot be found
+[2024-11-07 09:17:07.284127] File pdfs/TERNA -  Relazione finanzaria annuale - 2023.pdf cannot be found
+[2024-11-07 09:17:07.284543] File pdfs/TERNA -  Relazione finanzaria annuale - 2023.pdf cannot be found
+[2024-11-07 09:17:07.284933] File pdfs/TERNA -  Relazione finanzaria annuale - 2023.pdf cannot be found
+[2024-11-07 09:17:07.285320] File pdfs/TERNA -  Relazione finanzaria annuale - 2023.pdf cannot be found
+[2024-11-07 09:17:07.285709] File pdfs/TERNA -  Relazione finanzaria annuale - 2023.pdf cannot be found
+[2024-11-07 09:17:07.286090] File pdfs/TERNA -  Relazione finanzaria annuale - 2023.pdf cannot be found
+[2024-11-07 09:17:07.286502] File pdfs/TERNA -  Relazione finanzaria annuale - 2023.pdf cannot be found
+[2024-11-07 09:17:07.286892] File pdfs/TERNA -  Relazione finanzaria annuale - 2023.pdf cannot be found
+[2024-11-07 09:17:07.287286] File pdfs/TERNA -  Relazione finanzaria annuale - 2023.pdf cannot be found
+[2024-11-07 09:17:07.287680] File pdfs/TERNA -  Relazione finanzaria annuale - 2023.pdf cannot be found
+[2024-11-07 09:17:07.288086] File pdfs/TERNA -  Relazione finanzaria annuale - 2023.pdf cannot be found
+[2024-11-07 09:17:07.288487] File pdfs/TERNA -  Relazione finanzaria annuale - 2023.pdf cannot be found
+[2024-11-07 09:17:07.288880] File pdfs/TERNA -  Relazione finanzaria annuale - 2023.pdf cannot be found
+[2024-11-07 09:17:07.289266] File pdfs/TERNA -  Relazione finanzaria annuale - 2023.pdf cannot be found
+[2024-11-07 09:17:07.289644] File pdfs/TERNA -  Relazione finanzaria annuale - 2023.pdf cannot be found
+[2024-11-07 09:17:07.290024] File pdfs/TERNA -  Relazione finanzaria annuale - 2023.pdf cannot be found
+[2024-11-07 09:17:07.290426] File pdfs/TERNA -  Relazione finanzaria annuale - 2023.pdf cannot be found
+[2024-11-07 09:17:07.290827] File pdfs/TERNA -  Relazione finanzaria annuale - 2023.pdf cannot be found
+[2024-11-07 09:17:07.291225] File pdfs/TERNA -  Relazione finanzaria annuale - 2023.pdf cannot be found
+[2024-11-07 09:17:07.291621] File pdfs/TERNA -  Relazione finanzaria annuale - 2023.pdf cannot be found
+[2024-11-07 09:17:07.292234] File pdfs/TERNA -  Relazione finanzaria annuale - 2023.pdf cannot be found
+[2024-11-07 09:17:07.292668] File pdfs/TERNA -  Relazione finanzaria annuale - 2023.pdf cannot be found
+[2024-11-07 09:17:07.293095] File pdfs/TERNA -  Relazione finanzaria annuale - 2023.pdf cannot be found
+[2024-11-07 09:17:07.293495] File pdfs/TERNA -  Relazione finanzaria annuale - 2023.pdf cannot be found
+[2024-11-07 09:17:07.293902] File pdfs/TERNA -  Relazione finanzaria annuale - 2023.pdf cannot be found
+[2024-11-07 09:17:07.294309] File pdfs/TERNA -  Relazione finanzaria annuale - 2023.pdf cannot be found
+[2024-11-07 09:17:07.294715] File pdfs/TERNA -  Relazione finanzaria annuale - 2023.pdf cannot be found
+[2024-11-07 09:17:07.295106] File pdfs/TERNA -  Relazione finanzaria annuale - 2023.pdf cannot be found
+[2024-11-07 09:17:07.295505] File pdfs/TERNA -  Relazione finanzaria annuale - 2023.pdf cannot be found
+[2024-11-07 09:17:07.295892] File pdfs/TERNA -  Relazione finanzaria annuale - 2023.pdf cannot be found
+[2024-11-07 09:17:07.296285] File pdfs/TERNA -  Relazione finanzaria annuale - 2023.pdf cannot be found
+[2024-11-07 09:17:07.296676] File pdfs/TERNA -  Relazione finanzaria annuale - 2023.pdf cannot be found
+[1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 1, 1, 1, 1, 0, 0, 1, 1, 0, 1, 1, 0, 1, 1, 0, 1, 1, 0, 1, 1, 0, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 0, 0, 1]
+[1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 1, 1, 1, 1, 0, 0, 1]
+
+[1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 1, 1, 1, 1, 0, 0, 1, 1, 0, 1, 1, 0, 1, 1, 0, 1, 1, 0, 1, 1, 0, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 0, 0, 1, 1, 1, 0, 1, 1, 0, 0, 1, 1, 0]
+[1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 1, 1, 1, 1, 0, 0, 1, 1, 1, 1, 1, 1, 0, 0, 1, 1, 1]
+
+[1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 1, 1, 1, 1, 0, 0, 1, 1, 0, 1, 1, 0, 1, 1, 0, 1, 1, 0, 1, 1, 0, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 0, 0, 1, 1, 1, 0, 1, 1, 0, 0, 1, 1, 0, 0, 1, 0, 1, 1, 0, 1, 0, 1, 0]
+[1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 1, 1, 1, 1, 0, 0, 1, 1, 1, 1, 1, 1, 0, 0, 1, 1, 1, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1]
+
+[1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 1, 1, 1, 1, 0, 0, 1, 1, 0, 1, 1, 0, 1, 1, 0, 1, 1, 0, 1, 1, 0, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 0, 0, 1, 1, 1, 0, 1, 1, 0, 0, 1, 1, 0, 0, 1, 0, 1, 1, 0, 1, 0, 1, 0, 1, 0, 1, 0, 1, 1, 1, 1, 0, 0]
+[1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 1, 1, 1, 1, 0, 0, 1, 1, 1, 1, 1, 1, 0, 0, 1, 1, 1, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]
+
+[1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 1, 1, 1, 1, 0, 0, 1, 1, 0, 1, 1, 0, 1, 1, 0, 1, 1, 0, 1, 1, 0, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 0, 0, 1, 1, 1, 0, 1, 1, 0, 0, 1, 1, 0, 0, 1, 0, 1, 1, 0, 1, 0, 1, 0, 1, 0, 1, 0, 1, 1, 1, 1, 0, 0, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0]
+[1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 1, 1, 1, 1, 0, 0, 1, 1, 1, 1, 1, 1, 0, 0, 1, 1, 1, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]
+
+[1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 1, 1, 1, 1, 0, 0, 1, 1, 0, 1, 1, 0, 1, 1, 0, 1, 1, 0, 1, 1, 0, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 0, 0, 1, 1, 1, 0, 1, 1, 0, 0, 1, 1, 0, 0, 1, 0, 1, 1, 0, 1, 0, 1, 0, 1, 0, 1, 0, 1, 1, 1, 1, 0, 0, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 1, 0, 1, 0, 1, 0, 1, 0, 1, 0]
+[1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 1, 1, 1, 1, 0, 0, 1, 1, 1, 1, 1, 1, 0, 0, 1, 1, 1, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 1, 1, 1, 1, 1, 0, 1, 1]
+
+[1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 1, 1, 1, 1, 0, 0, 1, 1, 0, 1, 1, 0, 1, 1, 0, 1, 1, 0, 1, 1, 0, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 0, 0, 1, 1, 1, 0, 1, 1, 0, 0, 1, 1, 0, 0, 1, 0, 1, 1, 0, 1, 0, 1, 0, 1, 0, 1, 0, 1, 1, 1, 1, 0, 0, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 1, 0, 1, 0, 1, 0, 1, 0, 1, 0, 1, 1, 1, 1, 0, 0, 1, 1, 1, 1]
+[1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 1, 1, 1, 1, 0, 0, 1, 1, 1, 1, 1, 1, 0, 0, 1, 1, 1, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 1, 1, 1, 1, 1, 0, 1, 1, 1, 0, 1, 1, 1, 0, 1, 1, 1, 1]
+
+[1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 1, 1, 1, 1, 0, 0, 1, 1, 0, 1, 1, 0, 1, 1, 0, 1, 1, 0, 1, 1, 0, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 0, 0, 1, 1, 1, 0, 1, 1, 0, 0, 1, 1, 0, 0, 1, 0, 1, 1, 0, 1, 0, 1, 0, 1, 0, 1, 0, 1, 1, 1, 1, 0, 0, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 1, 0, 1, 0, 1, 0, 1, 0, 1, 0, 1, 1, 1, 1, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 1, 1, 1, 1]
+[1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 1, 1, 1, 1, 0, 0, 1, 1, 1, 1, 1, 1, 0, 0, 1, 1, 1, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 1, 1, 1, 1, 1, 0, 1, 1, 1, 0, 1, 1, 1, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]
+
+[1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 1, 1, 1, 1, 0, 0, 1, 1, 0, 1, 1, 0, 1, 1, 0, 1, 1, 0, 1, 1, 0, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 0, 0, 1, 1, 1, 0, 1, 1, 0, 0, 1, 1, 0, 0, 1, 0, 1, 1, 0, 1, 0, 1, 0, 1, 0, 1, 0, 1, 1, 1, 1, 0, 0, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 1, 0, 1, 0, 1, 0, 1, 0, 1, 0, 1, 1, 1, 1, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]
+[1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 1, 1, 1, 1, 0, 0, 1, 1, 1, 1, 1, 1, 0, 0, 1, 1, 1, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 1, 1, 1, 1, 1, 0, 1, 1, 1, 0, 1, 1, 1, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]
+
+[1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 1, 1, 1, 1, 0, 0, 1, 1, 0, 1, 1, 0, 1, 1, 0, 1, 1, 0, 1, 1, 0, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 0, 0, 1, 1, 1, 0, 1, 1, 0, 0, 1, 1, 0, 0, 1, 0, 1, 1, 0, 1, 0, 1, 0, 1, 0, 1, 0, 1, 1, 1, 1, 0, 0, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 1, 0, 1, 0, 1, 0, 1, 0, 1, 0, 1, 1, 1, 1, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 1, 0, 1, 1, 1]
+[1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 1, 1, 1, 1, 0, 0, 1, 1, 1, 1, 1, 1, 0, 0, 1, 1, 1, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 1, 1, 1, 1, 1, 0, 1, 1, 1, 0, 1, 1, 1, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]
+
+[2024-11-07 10:42:33.905608] File pdfs/LEONARDO - Bilancio Integrato 2023_12032024_per sito cannot be found
+[2024-11-07 10:42:33.906067] File pdfs/LEONARDO - Bilancio Integrato 2023_12032024_per sito cannot be found
+[2024-11-07 10:42:33.906522] File pdfs/LEONARDO - Bilancio Integrato 2023_12032024_per sito cannot be found
+[2024-11-07 10:42:33.906943] File pdfs/LEONARDO - Bilancio Integrato 2023_12032024_per sito cannot be found
+[2024-11-07 10:42:33.907349] File pdfs/LEONARDO - Bilancio Integrato 2023_12032024_per sito cannot be found
+[2024-11-07 10:42:33.907744] File pdfs/LEONARDO - Bilancio Integrato 2023_12032024_per sito cannot be found
+[2024-11-07 10:42:33.908139] File pdfs/LEONARDO - Bilancio Integrato 2023_12032024_per sito cannot be found
+[2024-11-07 10:42:33.908524] File pdfs/LEONARDO - Bilancio Integrato 2023_12032024_per sito cannot be found
+[2024-11-07 10:42:33.908918] File pdfs/LEONARDO - Bilancio Integrato 2023_12032024_per sito cannot be found
+[2024-11-07 10:42:33.909314] File pdfs/LEONARDO - Bilancio Integrato 2023_12032024_per sito cannot be found
+[2024-11-07 10:42:33.909699] File pdfs/LEONARDO - Bilancio Integrato 2023_12032024_per sito cannot be found
+[2024-11-07 10:42:33.910086] File pdfs/LEONARDO - Bilancio Integrato 2023_12032024_per sito cannot be found
+[2024-11-07 10:42:33.910723] File pdfs/LEONARDO - Bilancio Integrato 2023_12032024_per sito cannot be found
+[2024-11-07 10:42:33.911158] File pdfs/LEONARDO - Bilancio Integrato 2023_12032024_per sito cannot be found
+[2024-11-07 10:42:33.911563] File pdfs/LEONARDO - Bilancio Integrato 2023_12032024_per sito cannot be found
+[2024-11-07 10:42:33.911951] File pdfs/LEONARDO - Bilancio Integrato 2023_12032024_per sito cannot be found
+[2024-11-07 10:42:33.912363] File pdfs/LEONARDO - Bilancio Integrato 2023_12032024_per sito cannot be found
+[2024-11-07 10:42:33.912765] File pdfs/LEONARDO - Bilancio Integrato 2023_12032024_per sito cannot be found
+[2024-11-07 10:42:33.913157] File pdfs/LEONARDO - Bilancio Integrato 2023_12032024_per sito cannot be found
+[2024-11-07 10:42:33.913551] File pdfs/LEONARDO - Bilancio Integrato 2023_12032024_per sito cannot be found
+[2024-11-07 10:42:33.913939] File pdfs/LEONARDO - Bilancio Integrato 2023_12032024_per sito cannot be found
+[2024-11-07 10:42:33.914355] File pdfs/LEONARDO - Bilancio Integrato 2023_12032024_per sito cannot be found
+[2024-11-07 10:42:33.914763] File pdfs/LEONARDO - Bilancio Integrato 2023_12032024_per sito cannot be found
+[2024-11-07 10:42:33.915158] File pdfs/LEONARDO - Bilancio Integrato 2023_12032024_per sito cannot be found
+[2024-11-07 10:42:33.915545] File pdfs/LEONARDO - Bilancio Integrato 2023_12032024_per sito cannot be found
+[2024-11-07 10:42:33.915932] File pdfs/LEONARDO - Bilancio Integrato 2023_12032024_per sito cannot be found
+[2024-11-07 10:42:33.916318] File pdfs/LEONARDO - Bilancio Integrato 2023_12032024_per sito cannot be found
+[2024-11-07 10:42:33.916718] File pdfs/LEONARDO - Bilancio Integrato 2023_12032024_per sito cannot be found
+[2024-11-07 10:42:33.917111] File pdfs/LEONARDO - Bilancio Integrato 2023_12032024_per sito cannot be found
+[2024-11-07 10:42:33.917500] File pdfs/LEONARDO - Bilancio Integrato 2023_12032024_per sito cannot be found
+[2024-11-07 10:42:33.917883] File pdfs/LEONARDO - Bilancio Integrato 2023_12032024_per sito cannot be found
+[2024-11-07 10:42:33.918276] File pdfs/LEONARDO - Bilancio Integrato 2023_12032024_per sito cannot be found
+[2024-11-07 10:42:33.918694] File pdfs/LEONARDO - Bilancio Integrato 2023_12032024_per sito cannot be found
+[2024-11-07 10:42:33.919085] File pdfs/LEONARDO - Bilancio Integrato 2023_12032024_per sito cannot be found
+[2024-11-07 10:42:33.919466] File pdfs/LEONARDO - Bilancio Integrato 2023_12032024_per sito cannot be found
+[2024-11-07 10:42:33.919851] File pdfs/LEONARDO - Bilancio Integrato 2023_12032024_per sito cannot be found
+[2024-11-07 10:42:33.920234] File pdfs/LEONARDO - Bilancio Integrato 2023_12032024_per sito cannot be found
+[2024-11-07 10:42:33.920609] File pdfs/LEONARDO - Bilancio Integrato 2023_12032024_per sito cannot be found
+[2024-11-07 10:42:33.920986] File pdfs/LEONARDO - Bilancio Integrato 2023_12032024_per sito cannot be found
+[2024-11-07 10:42:33.921360] File pdfs/LEONARDO - Bilancio Integrato 2023_12032024_per sito cannot be found
+[2024-11-07 10:42:33.921739] File pdfs/LEONARDO - Bilancio Integrato 2023_12032024_per sito cannot be found
+[2024-11-07 10:42:33.922120] File pdfs/LEONARDO - Bilancio Integrato 2023_12032024_per sito cannot be found
+[2024-11-07 10:42:33.922583] File pdfs/LEONARDO - Bilancio Integrato 2023_12032024_per sito cannot be found
+[2024-11-07 10:42:33.922980] File pdfs/LEONARDO - Bilancio Integrato 2023_12032024_per sito cannot be found
+[2024-11-07 10:42:33.923368] File pdfs/LEONARDO - Bilancio Integrato 2023_12032024_per sito cannot be found
+[2024-11-07 10:42:33.923752] File pdfs/LEONARDO - Bilancio Integrato 2023_12032024_per sito cannot be found
+[2024-11-07 10:42:33.924137] File pdfs/LEONARDO - Bilancio Integrato 2023_12032024_per sito cannot be found
+[2024-11-07 10:42:33.924529] File pdfs/LEONARDO - Bilancio Integrato 2023_12032024_per sito cannot be found
+[2024-11-07 10:42:33.924918] File pdfs/LEONARDO - Bilancio Integrato 2023_12032024_per sito cannot be found
+[2024-11-07 10:42:33.925382] File pdfs/LEONARDO - Bilancio Integrato 2023_12032024_per sito cannot be found
+[2024-11-07 10:42:33.925779] File pdfs/LEONARDO - Bilancio Integrato 2023_12032024_per sito cannot be found
+[2024-11-07 10:42:33.926166] File pdfs/LEONARDO - Bilancio Integrato 2023_12032024_per sito cannot be found
+[2024-11-07 10:42:33.926585] File pdfs/LEONARDO - Bilancio Integrato 2023_12032024_per sito cannot be found
+[2024-11-07 10:42:33.926972] File pdfs/LEONARDO - Bilancio Integrato 2023_12032024_per sito cannot be found
+[2024-11-07 10:42:33.927380] File pdfs/LEONARDO - Bilancio Integrato 2023_12032024_per sito cannot be found
+[2024-11-07 10:42:33.927773] File pdfs/LEONARDO - Bilancio Integrato 2023_12032024_per sito cannot be found
+[2024-11-07 10:42:33.928176] File pdfs/LEONARDO - Bilancio Integrato 2023_12032024_per sito cannot be found
+[2024-11-07 10:42:33.928569] File pdfs/LEONARDO - Bilancio Integrato 2023_12032024_per sito cannot be found
+[2024-11-07 10:42:33.928960] File pdfs/LEONARDO - Bilancio Integrato 2023_12032024_per sito cannot be found
+[2024-11-07 10:42:33.929351] File pdfs/LEONARDO - Bilancio Integrato 2023_12032024_per sito cannot be found
+[2024-11-07 10:42:33.929741] File pdfs/LEONARDO - Bilancio Integrato 2023_12032024_per sito cannot be found
+[2024-11-07 10:42:33.930131] File pdfs/LEONARDO - Bilancio Integrato 2023_12032024_per sito cannot be found
+[2024-11-07 10:42:33.930546] File pdfs/LEONARDO - Bilancio Integrato 2023_12032024_per sito cannot be found
+[2024-11-07 10:42:33.930942] File pdfs/IREN - Bilancio di Sostenibilità 2023.pdf cannot be found
+[2024-11-07 10:42:33.931341] File pdfs/IREN - Bilancio di Sostenibilità 2023.pdf cannot be found
+[2024-11-07 10:42:33.931643] File pdfs/IREN - Bilancio di Sostenibilità 2023.pdf cannot be found
+[2024-11-07 10:42:33.931912] File pdfs/IREN - Bilancio di Sostenibilità 2023.pdf cannot be found
+[2024-11-07 10:42:33.932179] File pdfs/IREN - Bilancio di Sostenibilità 2023.pdf cannot be found
+[2024-11-07 10:42:33.932446] File pdfs/IREN - Bilancio di Sostenibilità 2023.pdf cannot be found
+[2024-11-07 10:42:33.932713] File pdfs/IREN - Bilancio di Sostenibilità 2023.pdf cannot be found
+[2024-11-07 10:42:33.932978] File pdfs/IREN - Bilancio di Sostenibilità 2023.pdf cannot be found
+[2024-11-07 10:42:33.933245] File pdfs/IREN - Bilancio di Sostenibilità 2023.pdf cannot be found
+[2024-11-07 10:42:33.933509] File pdfs/IREN - Bilancio di Sostenibilità 2023.pdf cannot be found
+[2024-11-07 10:42:33.933773] File pdfs/IREN - Bilancio di Sostenibilità 2023.pdf cannot be found
+[2024-11-07 10:42:33.934044] File pdfs/IREN - Bilancio di Sostenibilità 2023.pdf cannot be found
+[2024-11-07 10:42:33.934341] File pdfs/IREN - Bilancio di Sostenibilità 2023.pdf cannot be found
+[2024-11-07 10:42:33.934640] File pdfs/IREN - Bilancio di Sostenibilità 2023.pdf cannot be found
+[2024-11-07 10:42:33.934911] File pdfs/IREN - Bilancio di Sostenibilità 2023.pdf cannot be found
+[2024-11-07 10:42:33.935304] File pdfs/IREN - Bilancio di Sostenibilità 2023.pdf cannot be found
+[2024-11-07 10:42:33.935581] File pdfs/IREN - Bilancio di Sostenibilità 2023.pdf cannot be found
+[2024-11-07 10:42:33.935872] File pdfs/IREN - Bilancio di Sostenibilità 2023.pdf cannot be found
+[2024-11-07 10:42:33.936150] File pdfs/IREN - Bilancio di Sostenibilità 2023.pdf cannot be found
+[2024-11-07 10:42:33.936417] File pdfs/IREN - Bilancio di Sostenibilità 2023.pdf cannot be found
+[2024-11-07 10:42:33.936686] File pdfs/IREN - Bilancio di Sostenibilità 2023.pdf cannot be found
+[2024-11-07 10:42:33.936957] File pdfs/IREN - Bilancio di Sostenibilità 2023.pdf cannot be found
+[2024-11-07 10:42:33.937220] File pdfs/IREN - Bilancio di Sostenibilità 2023.pdf cannot be found
+[2024-11-07 10:42:33.937485] File pdfs/IREN - Bilancio di Sostenibilità 2023.pdf cannot be found
+[2024-11-07 10:42:33.937749] File pdfs/IREN - Bilancio di Sostenibilità 2023.pdf cannot be found
+[2024-11-07 10:42:33.938012] File pdfs/IREN - Bilancio di Sostenibilità 2023.pdf cannot be found
+[2024-11-07 10:42:33.938270] File pdfs/IREN - Bilancio di Sostenibilità 2023.pdf cannot be found
+[2024-11-07 10:42:33.938557] File pdfs/IREN - Bilancio di Sostenibilità 2023.pdf cannot be found
+[2024-11-07 10:42:33.938825] File pdfs/IREN - Bilancio di Sostenibilità 2023.pdf cannot be found
+[2024-11-07 10:42:33.939087] File pdfs/IREN - Bilancio di Sostenibilità 2023.pdf cannot be found
+[2024-11-07 10:42:33.939351] File pdfs/IREN - Bilancio di Sostenibilità 2023.pdf cannot be found
+[2024-11-07 10:42:33.939617] File pdfs/IREN - Bilancio di Sostenibilità 2023.pdf cannot be found
+[2024-11-07 10:42:33.939880] File pdfs/IREN - Bilancio di Sostenibilità 2023.pdf cannot be found
+[2024-11-07 10:42:33.940148] File pdfs/IREN - Bilancio di Sostenibilità 2023.pdf cannot be found
+[2024-11-07 10:42:33.940417] File pdfs/IREN - Bilancio di Sostenibilità 2023.pdf cannot be found
+[2024-11-07 10:42:33.940681] File pdfs/IREN - Bilancio di Sostenibilità 2023.pdf cannot be found
+[2024-11-07 10:42:33.940946] File pdfs/IREN - Bilancio di Sostenibilità 2023.pdf cannot be found
+[2024-11-07 10:42:33.941210] File pdfs/IREN - Bilancio di Sostenibilità 2023.pdf cannot be found
+[2024-11-07 10:42:33.941474] File pdfs/IREN - Bilancio di Sostenibilità 2023.pdf cannot be found
+[2024-11-07 10:42:33.941763] File pdfs/IREN - Bilancio di Sostenibilità 2023.pdf cannot be found
+[2024-11-07 10:42:33.942025] File pdfs/IREN - Bilancio di Sostenibilità 2023.pdf cannot be found
+[2024-11-07 10:42:33.942297] File pdfs/IREN - Bilancio di Sostenibilità 2023.pdf cannot be found
+[2024-11-07 10:42:33.942575] File pdfs/IREN - Bilancio di Sostenibilità 2023.pdf cannot be found
+[2024-11-07 10:42:33.942845] File pdfs/IREN - Bilancio di Sostenibilità 2023.pdf cannot be found
+[2024-11-07 10:42:33.943110] File pdfs/IREN - Bilancio di Sostenibilità 2023.pdf cannot be found
+[2024-11-07 10:42:33.943375] File pdfs/IREN - Bilancio di Sostenibilità 2023.pdf cannot be found
+[2024-11-07 10:42:33.943648] File pdfs/IREN - Bilancio di Sostenibilità 2023.pdf cannot be found
+[2024-11-07 10:42:33.943917] File pdfs/IREN - Bilancio di Sostenibilità 2023.pdf cannot be found
+[2024-11-07 10:42:33.944183] File pdfs/IREN - Bilancio di Sostenibilità 2023.pdf cannot be found
+[2024-11-07 10:42:33.944455] File pdfs/IREN - Bilancio di Sostenibilità 2023.pdf cannot be found
+[2024-11-07 10:42:33.944722] File pdfs/IREN - Bilancio di Sostenibilità 2023.pdf cannot be found
+[2024-11-07 10:42:33.944985] File pdfs/IREN - Bilancio di Sostenibilità 2023.pdf cannot be found
+[2024-11-07 10:42:33.945248] File pdfs/IREN - Bilancio di Sostenibilità 2023.pdf cannot be found
+[1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 1, 1, 1, 1, 0, 0, 1, 1, 0, 1, 1, 0, 1, 1, 0, 1, 1, 0, 1, 1, 0, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 0, 0, 1, 1, 1, 0, 1, 1, 0, 0, 1, 1, 0, 0, 1, 0, 1, 1, 0, 1, 0, 1, 0, 1, 0, 1, 0, 1, 1, 1, 1, 0, 0, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 1, 0, 1, 0, 1, 0, 1, 0, 1, 0, 1, 1, 1, 1, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 1, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 1]
+[1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 1, 1, 1, 1, 0, 0, 1, 1, 1, 1, 1, 1, 0, 0, 1, 1, 1, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 1, 1, 1, 1, 1, 0, 1, 1, 1, 0, 1, 1, 1, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]
+
+[1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 1, 1, 1, 1, 0, 0, 1, 1, 0, 1, 1, 0, 1, 1, 0, 1, 1, 0, 1, 1, 0, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 0, 0, 1, 1, 1, 0, 1, 1, 0, 0, 1, 1, 0, 0, 1, 0, 1, 1, 0, 1, 0, 1, 0, 1, 0, 1, 0, 1, 1, 1, 1, 0, 0, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 1, 0, 1, 0, 1, 0, 1, 0, 1, 0, 1, 1, 1, 1, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 1, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 1, 1, 1, 1, 0, 1, 1, 1, 1, 1, 0]
+[1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 1, 1, 1, 1, 0, 0, 1, 1, 1, 1, 1, 1, 0, 0, 1, 1, 1, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 1, 1, 1, 1, 1, 0, 1, 1, 1, 0, 1, 1, 1, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]
+
+[1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 1, 1, 1, 1, 0, 0, 1, 1, 0, 1, 1, 0, 1, 1, 0, 1, 1, 0, 1, 1, 0, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 0, 0, 1, 1, 1, 0, 1, 1, 0, 0, 1, 1, 0, 0, 1, 0, 1, 1, 0, 1, 0, 1, 0, 1, 0, 1, 0, 1, 1, 1, 1, 0, 0, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 1, 0, 1, 0, 1, 0, 1, 0, 1, 0, 1, 1, 1, 1, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 1, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 1, 1, 1, 1, 0, 1, 1, 1, 1, 1, 0, 1, 1, 0, 0, 1, 0, 1, 1, 0, 1]
+[1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 1, 1, 1, 1, 0, 0, 1, 1, 1, 1, 1, 1, 0, 0, 1, 1, 1, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 1, 1, 1, 1, 1, 0, 1, 1, 1, 0, 1, 1, 1, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]
+
+[1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 1, 1, 1, 1, 0, 0, 1, 1, 0, 1, 1, 0, 1, 1, 0, 1, 1, 0, 1, 1, 0, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 0, 0, 1, 1, 1, 0, 1, 1, 0, 0, 1, 1, 0, 0, 1, 0, 1, 1, 0, 1, 0, 1, 0, 1, 0, 1, 0, 1, 1, 1, 1, 0, 0, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 1, 0, 1, 0, 1, 0, 1, 0, 1, 0, 1, 1, 1, 1, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 1, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 1, 1, 1, 1, 0, 1, 1, 1, 1, 1, 0, 1, 1, 0, 0, 1, 0, 1, 1, 0, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+[1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 1, 1, 1, 1, 0, 0, 1, 1, 1, 1, 1, 1, 0, 0, 1, 1, 1, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 1, 1, 1, 1, 1, 0, 1, 1, 1, 0, 1, 1, 1, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]
+
+[1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 1, 1, 1, 1, 0, 0, 1, 1, 0, 1, 1, 0, 1, 1, 0, 1, 1, 0, 1, 1, 0, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 0, 0, 1, 1, 1, 0, 1, 1, 0, 0, 1, 1, 0, 0, 1, 0, 1, 1, 0, 1, 0, 1, 0, 1, 0, 1, 0, 1, 1, 1, 1, 0, 0, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 1, 0, 1, 0, 1, 0, 1, 0, 1, 0, 1, 1, 1, 1, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 1, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 1, 1, 1, 1, 0, 1, 1, 1, 1, 1, 0, 1, 1, 0, 0, 1, 0, 1, 1, 0, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 1]
+[1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 1, 1, 1, 1, 0, 0, 1, 1, 1, 1, 1, 1, 0, 0, 1, 1, 1, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 1, 1, 1, 1, 1, 0, 1, 1, 1, 0, 1, 1, 1, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 1, 1]
+
+[1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 1, 1, 1, 1, 0, 0, 1, 1, 0, 1, 1, 0, 1, 1, 0, 1, 1, 0, 1, 1, 0, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 0, 0, 1, 1, 1, 0, 1, 1, 0, 0, 1, 1, 0, 0, 1, 0, 1, 1, 0, 1, 0, 1, 0, 1, 0, 1, 0, 1, 1, 1, 1, 0, 0, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 1, 0, 1, 0, 1, 0, 1, 0, 1, 0, 1, 1, 1, 1, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 1, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 1, 1, 1, 1, 0, 1, 1, 1, 1, 1, 0, 1, 1, 0, 0, 1, 0, 1, 1, 0, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 0, 1, 1, 1, 1]
+[1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 1, 1, 1, 1, 0, 0, 1, 1, 1, 1, 1, 1, 0, 0, 1, 1, 1, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 1, 1, 1, 1, 1, 0, 1, 1, 1, 0, 1, 1, 1, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]
+
+[1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 1, 1, 1, 1, 0, 0, 1, 1, 0, 1, 1, 0, 1, 1, 0, 1, 1, 0, 1, 1, 0, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 0, 0, 1, 1, 1, 0, 1, 1, 0, 0, 1, 1, 0, 0, 1, 0, 1, 1, 0, 1, 0, 1, 0, 1, 0, 1, 0, 1, 1, 1, 1, 0, 0, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 1, 0, 1, 0, 1, 0, 1, 0, 1, 0, 1, 1, 1, 1, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 1, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 1, 1, 1, 1, 0, 1, 1, 1, 1, 1, 0, 1, 1, 0, 0, 1, 0, 1, 1, 0, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 0, 1, 1, 1, 1, 0, 1, 1, 0, 1, 1, 1, 1, 1, 0]
+[1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 1, 1, 1, 1, 0, 0, 1, 1, 1, 1, 1, 1, 0, 0, 1, 1, 1, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 1, 1, 1, 1, 1, 0, 1, 1, 1, 0, 1, 1, 1, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]
+
+[1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 1, 1, 1, 1, 0, 0, 1, 1, 0, 1, 1, 0, 1, 1, 0, 1, 1, 0, 1, 1, 0, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 0, 0, 1, 1, 1, 0, 1, 1, 0, 0, 1, 1, 0, 0, 1, 0, 1, 1, 0, 1, 0, 1, 0, 1, 0, 1, 0, 1, 1, 1, 1, 0, 0, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 1, 0, 1, 0, 1, 0, 1, 0, 1, 0, 1, 1, 1, 1, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 1, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 1, 1, 1, 1, 0, 1, 1, 1, 1, 1, 0, 1, 1, 0, 0, 1, 0, 1, 1, 0, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 0, 1, 1, 1, 1, 0, 1, 1, 0, 1, 1, 1, 1, 1, 0, 1, 1, 1, 1, 1, 1, 1, 0, 1, 1]
+[1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 1, 1, 1, 1, 0, 0, 1, 1, 1, 1, 1, 1, 0, 0, 1, 1, 1, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 1, 1, 1, 1, 1, 0, 1, 1, 1, 0, 1, 1, 1, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]
+
+[1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 1, 1, 1, 1, 0, 0, 1, 1, 0, 1, 1, 0, 1, 1, 0, 1, 1, 0, 1, 1, 0, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 0, 0, 1, 1, 1, 0, 1, 1, 0, 0, 1, 1, 0, 0, 1, 0, 1, 1, 0, 1, 0, 1, 0, 1, 0, 1, 0, 1, 1, 1, 1, 0, 0, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 1, 0, 1, 0, 1, 0, 1, 0, 1, 0, 1, 1, 1, 1, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 1, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 1, 1, 1, 1, 0, 1, 1, 1, 1, 1, 0, 1, 1, 0, 0, 1, 0, 1, 1, 0, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 0, 1, 1, 1, 1, 0, 1, 1, 0, 1, 1, 1, 1, 1, 0, 1, 1, 1, 1, 1, 1, 1, 0, 1, 1, 1, 1, 1, 0, 1, 0, 1, 0, 1]
+[[1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 1, 1, 0, 0, 0, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 0, 0, 0, 0, 0, 0, 1, 1, 0, 0, 0, 0, 0, 1, 1, 0, 0, 0, 0, 1, 1, 0, 1, 1, 1, 1, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 1, 1, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 0, 0, 1, 1, 1, 1, 1, 1, 1, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 1, 1, 1, 1, 0, 1, 0, 1, 1, 1, 1, 1, 0, 1, 1, 1, 1, 0, 0, 0, 1, 1, 1, 0, 0, 0, 0, 0, 0, 1, 1, 1, 0, 0, 0, 0, 0, 1, 0, 0, 0], [1, 1, 1, 0, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1, 1, 1, 1, 1, 1, 1, 0, 1, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 1, 1, 0, 0, 0, 1, 1, 0, 1, 1, 1, 0, 0, 0, 1, 1, 0, 0, 0, 0, 1, 1, 0, 1, 1, 1, 0, 1, 0, 1, 1, 0, 1, 1, 1, 0, 0, 1, 1, 1, 1, 0, 0, 1, 1, 1, 1, 0, 1, 1, 1, 1, 0, 0, 0, 1, 0, 0, 1, 1, 1, 0, 0, 0, 1, 0, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 1, 1, 1, 0, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 1, 1, 1, 1, 1, 1, 1, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 1, 1, 1, 1, 0, 1, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 1, 1, 1, 0, 0, 0, 0, 0, 0, 1, 1, 1, 0, 0, 0, 0, 0, 1, 0, 0, 0], [1, 1, 1, 0, 0, 0, 0, 1, 1, 0, 0, 1, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 1, 1, 1, 0, 0, 0, 0, 0, 0, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 0, 1, 1, 1, 0, 0, 0, 1, 1, 1, 1, 1, 1, 0, 0, 0, 1, 1, 0, 1, 1, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 1, 1, 1, 1, 0, 0, 1, 1, 0, 0, 1, 1, 1, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 1, 1, 1, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 1, 1, 1, 1, 1, 1, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 1, 1, 1, 0, 0, 0, 1, 0, 1, 0, 1, 0], [1, 1, 1, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 1, 1, 1, 1, 1, 0, 1, 0, 1, 1, 0, 0, 1, 0, 1, 1, 1, 1, 0, 1, 1, 1, 1, 0, 0, 1, 1, 1, 1, 1, 1, 0, 0, 0, 1, 1, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 1, 1, 1, 1, 0, 0, 1, 1, 1, 0, 1, 1, 1, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 1, 1, 1, 1, 1, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 1, 1, 1, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 1, 1, 1, 1, 1, 1, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 1, 1, 1, 1, 1, 0, 1, 0, 1, 0, 1, 0], [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 1, 1, 1, 1, 0, 0, 1, 1, 1, 1, 1, 1, 0, 0, 1, 1, 1, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 1, 1, 1, 1, 1, 0, 1, 1, 1, 0, 1, 1, 1, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1], [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 1, 1, 1, 1, 0, 1, 1, 1, 1, 1, 1, 1, 0, 0, 1, 1, 1, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]]
+
+Value extraction accuracy: 0.6530612244897959
+Page filtering accuracy: 0.9551020408163265
+245
+Percentage of value extracted correctly but from wrong pages: 0.00816326530612245
+True

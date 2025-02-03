@@ -8,7 +8,10 @@ from datetime import datetime
 from typing import List, Union, Any
 from tqdm import tqdm
 
+from transformers import AutoModel, AutoTokenizer
+from sentence_transformers import SentenceTransformer
 from langchain_huggingface import HuggingFaceEmbeddings
+from langchain.embeddings.base import Embeddings
 from langchain_community.retrievers import TFIDFRetriever
 from langchain_core.callbacks import CallbackManagerForRetrieverRun
 from langchain_core.documents import Document
@@ -35,7 +38,6 @@ class Handler(object):
 class VectorStoreHandler(Handler):
     def __init__(self, args):
         super(VectorStoreHandler,self).__init__(args)
-        #self.model_name = "sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2"
         self.model_name = args["model_name"]
 
         if torch.cuda.is_available():
@@ -43,7 +45,10 @@ class VectorStoreHandler(Handler):
         else:
             device = "cpu"
 
+        #if self.model_name.split("/")[0] == "sentence-transformers":
         self.embeddings = self.get_embeddings(self.model_name, device)
+        #else:
+        #    self.embeddings = CustomHuggingFaceEmbeddings(model_name=self.model_name)
 
         self.pgconnector = PgVectorConnector()
 
@@ -106,7 +111,7 @@ class VectorStoreHandler(Handler):
         end_time = time.time()
         logger.info(f"[{datetime.now()}] Added {len(allowed_docs)} documents in {end_time - start_time} seconds")
 
-    def delete_from_vector_store(self, ids: Union[list[str], str], collection_name="coll"):
+    def delete_from_vector_store(self, ids, collection_name="coll"):
         start_time = time.time()
         logger.info(f"[{datetime.now()}] Removing {ids} documents from the vector store...")
         if isinstance(ids, str):
@@ -119,7 +124,7 @@ class VectorStoreHandler(Handler):
         logger.info(f"[{datetime.now()}] Removed {ids} documents in {end_time - start_time} seconds")
 
     @functools.cache
-    def query_by_similarity(self, query, k=50, filters=(), with_scores=False):
+    def query_by_similarity(self, query, k=20, filters=(), with_scores=False):
         d_filter = {}
         for i in range(len(filters)):
             d_filter[filters[i][0]] = filters[i][1]
@@ -218,7 +223,7 @@ class SparseStoreHandler(Handler):
         logger.info(f"[{datetime.now()}] Added {len(allowed_docs)} documents in {end_time - start_time} seconds")
 
     @functools.cache
-    def query_by_similarity(self, query, source, k=50, with_scores=False):
+    def query_by_similarity(self, query, source, k=20, with_scores=False):
         conn = self.pgconnector.start_db_connection()
         docs, _ = self.pgconnector.get_pages(conn, source)
         self.pgconnector.close_db_connection(conn)
@@ -241,7 +246,7 @@ class EnsembleRetrieverHandler(SparseStoreHandler, VectorStoreHandler):
         super(EnsembleRetrieverHandler, self).__init__(args)
         self.lmbd = args["lambda"]
 
-    def combine_results(self, semantic_results, syntactic_results, k=50, lmbd = .3):
+    def combine_results(self, semantic_results, syntactic_results, k=20, lmbd = .3):
         results = {}
         res_debug = {}
         for i,r in enumerate([semantic_results, syntactic_results]):
@@ -268,7 +273,7 @@ class EnsembleRetrieverHandler(SparseStoreHandler, VectorStoreHandler):
         return [el[0] for el in values]
 
     @functools.cache
-    def query_by_similarity(self, query, filters, k=50):
+    def query_by_similarity(self, query, filters, k=20):
         if len(filters) == 0:
             raise ValueError(f"\"filters\" param cannot be empty")
         if filters[0][0] != "source":

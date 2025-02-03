@@ -15,10 +15,20 @@ from tqdm import tqdm
 from utils import init_args
 from runnable import Runnable
 
+from phoenix.otel import register
+from openinference.instrumentation.langchain import LangChainInstrumentor
+
 load_dotenv()
 
 logging.basicConfig(filename="./tests/log/bper.log", level=logging.INFO)
 logger = logging.getLogger("bper.test")
+
+tracer_provider = register(
+   project_name="bper-tabula", #"llm-am",
+   endpoint="http://localhost:6006/v1/traces",
+)
+
+LangChainInstrumentor().instrument(tracer_provider=tracer_provider)
 
 def check_args(args):
     if sum([args["use_dense"], args["use_sparse"], args["use_ensemble"]]) != 1:
@@ -160,9 +170,16 @@ if __name__ == "__main__":
    correct_pred = []
    top_k = []
    r = Runnable(args)
+   count = 0
+   try:
+      with open("test_results.pkl", "rb") as reader:
+         result_pd = pkl.load(reader)
+      result_pd = result_pd[:-1]
+      limit = len(result_pd)
+   except:
+      result_pd = []
+      limit = 0
 
-   #count = 0
-   result_pd = []
    for k, (_,row) in enumerate(tqdm(df.iterrows())):
       if k == 420:
          break
@@ -173,15 +190,21 @@ if __name__ == "__main__":
          print(f"[{datetime.now()}] File {file_path} cannot be found")
          logger.warning(f"[{datetime.now()}] File {file_path} cannot be found")
          continue
-      """if count < 122:
+      if count < limit:
          count += 1
-         continue"""
+         continue
 
       args["pdf"] = file_path
       if str(row["Descrizione"].iloc[0]) == "nan":
-         args["query"] = str(row["INDICATORE"].iloc[0])
+         try:
+            args["query"] = str(row["INDICATORE"].iloc[0] + " Anno " + str(int(row["Valore"]["Anno"])))
+         except:
+            args["query"] = str(row["INDICATORE"].iloc[0] + " Anno " + str(row["Valore"]["Anno"]))
       else:
-         args["query"] = str(row["Descrizione"].iloc[0])
+         try:
+            args["query"] = str(row["Descrizione"].iloc[0] + " Anno " + str(int(row["Valore"]["Anno"])))
+         except:
+            args["query"] = str(row["Descrizione"].iloc[0] + " Anno " + str(row["Valore"]["Anno"]))
 
       r.args = args
 

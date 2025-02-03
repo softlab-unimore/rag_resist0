@@ -4,8 +4,8 @@ import traceback
 
 from dataprocessor import PageProcessor
 from vector_store import VectorStoreHandler, SparseStoreHandler, EnsembleRetrieverHandler
-from llama import LlamaModel, OpenAIModel
-from table_extraction import UnstructuredTableExtractor
+from llm import LlamaModel, OpenAIModel
+from table_extraction import UnstructuredTableExtractor, TabulaTableExtractor, CombinedTableExtractor, Docdetection
 
 logging.basicConfig(filename="./log/bper.log", level=logging.INFO)
 logger = logging.getLogger("bper.main")
@@ -13,10 +13,9 @@ logger = logging.getLogger("bper.main")
 class Runnable:
 
     def __init__(self, args):
-        self.switch_method = {
-            "page": PageProcessor,
-        }
-        self.table_extractor = UnstructuredTableExtractor("yolox", "hi_res")
+        if not args["fast"]:
+            self.table_extractor = Docdetection()
+
         if args["use_dense"]:
             self.vsh = VectorStoreHandler(args)
         elif args["use_sparse"]:
@@ -28,31 +27,25 @@ class Runnable:
         elif args["use_openai"]:
             self.extr_model = OpenAIModel()
 
-        try:
-            self.processor = self.switch_method[args["method"]]()
-        except:
-            raise ValueError(f"{args['method']} is not a valid extraction method")
+        self.processor = PageProcessor()
 
         self.args = args
 
     def run_value_extraction(self, contents):
         contents_txt = [doc.page_content for doc in contents]
-        #tables_html = self.table_extractor.extract_table_unstructured(contents)
+        if not self.args["fast"]:
+            tables_html = self.table_extractor.extract_table(contents)
+        else:
+            tables_html = [[] for _ in contents_txt]
+
         try:
-            results = self.extr_model.run(contents_txt, self.args["query"]) #, tables_html)
+            results = self.extr_model.run(contents_txt, self.args["query"], tables_html)
         except:
             logger.warning(f"OpenAI has returned an error")
+        results = {(content.metadata["source"], str(content.metadata["page"])): eval(result) for content, result in zip(contents, results)}
         return results
 
-    def run(self, gri_code=None):
-        if gri_code is not None:
-            if gri_code != "nan":
-                self.args["use_dense"] = True
-                self.args["use_sparse"] = False
-            else:
-                self.args["use_sparse"] = True
-                self.args["use_dense"] = False
-
+    def run(self):
         if self.args["use_dense"]:
             self.vsh.get_vector_store()
 
@@ -65,12 +58,13 @@ class Runnable:
                 self.ssh.load_docs_in_sparse_store(contents)
             similar_docs = None
         elif self.args["query"]:
+            self.args["k"] = int(self.args["k"])
             filters = (("source", self.args["pdf"]), ("model_name", self.args["model_name"]))
             if self.args["use_dense"]:
-                similar_docs = self.vsh.query_by_similarity(self.args["query"], filters=filters, with_scores=True)
+                similar_docs = self.vsh.query_by_similarity(self.args["query"], k=self.args["k"], filters=filters, with_scores=True)
             elif self.args["use_sparse"]:
-                similar_docs = self.ssh.query_by_similarity(self.args["query"], source=self.args["pdf"], with_scores=True)
+                similar_docs = self.ssh.query_by_similarity(self.args["query"], k=self.args["k"], source=self.args["pdf"], with_scores=True)
             elif self.args["use_ensemble"]:
-                similar_docs = self.ens.query_by_similarity(self.args["query"], filters=filters)
+                similar_docs = self.ens.query_by_similarity(self.args["query"], k=self.args["k"], filters=filters)
 
         return similar_docs
