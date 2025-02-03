@@ -5,3 +5,9 @@ POSTGRES_DB=
 POSTGRES_PORT=5432
 POSTGRES_EMB_TABLE_NAME=langchain_pg_embedding
 POSTGRES_SPARSE_TABLE_NAME=
+
+# huggingface key
+HF_API_KEY= 
+
+# openai key
+OPENAI_API_KEY=
