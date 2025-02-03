@@ -2,7 +2,7 @@
 
 
 
-This repository contains the code to extract **financial and non-financial indicators** from company reports (pdf files)  
+This repository contains the code to extract **financial and non-financial indicators** from company reports (pdf files). Given a query regarding financial and non-financial indicators (like the ones shown in `en_gris.json`), the script returns the most relevant pages, as well as some possible numerical result we might be searching for.  
 
 
 
