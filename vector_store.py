@@ -9,13 +9,11 @@ from typing import List, Union, Any
 from tqdm import tqdm
 
 from transformers import AutoModel, AutoTokenizer
-from sentence_transformers import SentenceTransformer
 from langchain_huggingface import HuggingFaceEmbeddings
 from langchain.embeddings.base import Embeddings
 from langchain_community.retrievers import TFIDFRetriever
 from langchain_core.callbacks import CallbackManagerForRetrieverRun
 from langchain_core.documents import Document
-from langchain_postgres import PGVector
 from langchain_postgres.vectorstores import PGVector
 
 from connectors import PgVectorConnector

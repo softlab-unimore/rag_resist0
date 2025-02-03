@@ -1,11 +1,9 @@
 import logging
-import time
-import traceback
 
 from dataprocessor import PageProcessor
 from vector_store import VectorStoreHandler, SparseStoreHandler, EnsembleRetrieverHandler
 from llm import LlamaModel, OpenAIModel
-from table_extraction import UnstructuredTableExtractor, TabulaTableExtractor, CombinedTableExtractor, Docdetection
+from table_extraction import Docdetection
 
 logging.basicConfig(filename="./log/bper.log", level=logging.INFO)
 logger = logging.getLogger("bper.main")

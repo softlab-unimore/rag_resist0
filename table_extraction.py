@@ -3,17 +3,14 @@ from unstructured.partition.pdf import partition_pdf
 from tqdm import tqdm
 from PyPDF2 import PdfReader, PdfWriter
 from functools import lru_cache
-from transformers import AutoModelForObjectDetection, AutoImageProcessor
 from concurrent.futures import ThreadPoolExecutor, as_completed
-import pytesseract
+# import pytesseract
 import pandas as pd
 import tabula
 
-from PIL import Image
 from bs4 import BeautifulSoup
-import torch
 
-from pathlib import Path
+# from pathlib import Path
 import deepdoctection as dd
 
 class TabulaTableExtractor:
