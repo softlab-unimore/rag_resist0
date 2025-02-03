@@ -18,8 +18,8 @@ from langchain_postgres.vectorstores import PGVector
 
 from connectors import PgVectorConnector
 
-logging.basicConfig(filename="./log/bper.log", level=logging.INFO)
-logger = logging.getLogger("bper.vector_store")
+logging.basicConfig(filename="./log/rag.log", level=logging.INFO)
+logger = logging.getLogger("rag.vector_store")
 
 class Handler(object):
     def __init__(self, args):

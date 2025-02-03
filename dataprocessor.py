@@ -7,8 +7,8 @@ from langchain_community.document_loaders import PyPDFLoader
 from tqdm import tqdm
 from datetime import datetime
 
-logging.basicConfig(filename="./log/bper.log", level=logging.INFO)
-logger = logging.getLogger("bper.dataprocessor")
+logging.basicConfig(filename="./log/rag.log", level=logging.INFO)
+logger = logging.getLogger("rag.dataprocessor")
 
 class PageProcessor:
     """

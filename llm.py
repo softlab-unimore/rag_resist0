@@ -11,7 +11,7 @@ from langchain_community.callbacks import get_openai_callback
 
 load_dotenv()
 
-logging.basicConfig(filename="./log/llm.log", level=logging.INFO)
+logging.basicConfig(filename="./log/rag.log", level=logging.INFO)
 logger = logging.getLogger("rag.llm")
 
 class LlamaModel:
