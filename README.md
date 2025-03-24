@@ -92,7 +92,7 @@ The additional parameter `--lambda` is a scalar value that controls the importan
 #### How to be faster by skipping the table extraction
 
 Inside the final prompt that computes the answer, the model extracts by default the tables inside the document pages. This is done to improve the accuracy of the model, but it is slower.
-To skip the table extraction phase, use the flag `--skip_table_extraction`.
+To skip the table extraction phase, use the flag `--fast`.
 
 #### To reproduce the results
 
