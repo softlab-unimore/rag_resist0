@@ -7,8 +7,8 @@ from vector_store import VectorStoreHandler, SparseStoreHandler, EnsembleRetriev
 from llm import LlamaModel, OpenAIModel
 from table_extraction import Docdetection
 
-logging.basicConfig(filename="./log/bper.log", level=logging.INFO)
-logger = logging.getLogger("bper.main")
+logging.basicConfig(filename="./log/rag.log", level=logging.INFO)
+logger = logging.getLogger("rag.runnable")
 
 class Runnable:
 

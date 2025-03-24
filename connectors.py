@@ -8,8 +8,8 @@ from dotenv import load_dotenv
 
 load_dotenv()
 
-logging.basicConfig(filename="./log/bper.log", level=logging.INFO)
-logger = logging.getLogger("bper.connector")
+logging.basicConfig(filename="./log/rag.log", level=logging.INFO)
+logger = logging.getLogger("rag.connector")
 
 class PgVectorConnector:
     def __init__(self):
