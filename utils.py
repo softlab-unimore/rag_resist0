@@ -10,7 +10,7 @@ def check_args(args):
         raise ValueError(f"cannot embed using the ensemble model. The ensemble model can only be used for querying, after the vector and sparse stores are loaded into the db")
 
 def init_args():
-    parser = argparse.ArgumentParser(prog='BPER Table Extractor', description='Extract tables from companies non financial statements')
+    parser = argparse.ArgumentParser(prog='Financial QA', description='Extract data from companies non financial statements')
 
     parser.add_argument('-p', '--pdf', type=str, required=True, default='',
                         help='relative URI of the pdf file to analyze')
