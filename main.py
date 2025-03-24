@@ -14,3 +14,4 @@ if __name__ == "__main__":
         results = [r[0] for r in results]
 
     result_llm = runner.run_value_extraction(results)
+    print(result_llm)

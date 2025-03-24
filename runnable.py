@@ -1,6 +1,4 @@
 import logging
-import os
-import json
 
 from dataprocessor import PageProcessor
 from vector_store import VectorStoreHandler, SparseStoreHandler, EnsembleRetrieverHandler
@@ -42,20 +40,8 @@ class Runnable:
             results = self.extr_model.run(contents_txt, self.args["query"], tables_html)
         except:
             logger.warning(f"OpenAI has returned an error")
-
-        result_dict = {}
-        for content, result in zip(contents, results):
-            if content.metadata["source"] not in result_dict.keys():
-                result_dict[content.metadata["source"]] = {}
-            result_dict[content.metadata["source"]][str(content.metadata["page"])] = eval(result)
-        # results = {(content.metadata["source"], str(content.metadata["page"])): eval(result) for content, result in zip(contents, results)}
-
-        os.makedirs("results", exist_ok=True)
-
-        with open(os.path.join("results", "result.json"), "w") as f:
-            json.dump(result_dict, f, indent=2)
-
-        return result_dict
+        results = {(content.metadata["source"], str(content.metadata["page"])): eval(result) for content, result in zip(contents, results)}
+        return results
 
     def run(self):
         if self.args["use_dense"]:
