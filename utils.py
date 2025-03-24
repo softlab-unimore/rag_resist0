@@ -36,7 +36,7 @@ def init_args():
                         help='integration scalar for syntactic features. Only usable with --use_ensemble')
     parser.add_argument('-k', '--k', type=float, required=False, default=20, 
                         help='Number of most relevant pages filtered in the pre-fetching phase')
-    parser.add_argument('-k', '--skip_table_extraction', action="store_true", default=False,
+    parser.add_argument('-f', '--fast', action="store_true", default=False,
                         help='skip table extraction phase')
 
     args = vars(parser.parse_args())
