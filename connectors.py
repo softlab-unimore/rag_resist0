@@ -17,8 +17,9 @@ class PgVectorConnector:
         password = os.environ["POSTGRES_PASSWORD"]
         db = os.environ["POSTGRES_DB"]
         port = os.environ["POSTGRES_PORT"]
-        self.connection = f"postgresql+psycopg://{username}:{password}@localhost:{port}/{db}"
-    
+        address = os.environ.get("POSTGRES_ADDRESS", "localhost")
+        self.connection = f"postgresql+psycopg://{username}:{password}@{address}:{port}/{db}"
+
     def get_connection(self):
         return self.connection
     
